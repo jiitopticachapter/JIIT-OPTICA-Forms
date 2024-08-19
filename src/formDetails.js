@@ -1,7 +1,8 @@
 const formDetails = {
+  backgroundImage: "",
   formHeading: {
     heading: "Optica Volunteer Recruitment",
-    font: "Saira Stencil One",
+    font: "Saira Stencil One", // make sure to import this font if not default font
   },
   formDescription: {
     description:
@@ -32,13 +33,19 @@ const formDetails = {
       other: true,
     },
     {
-      label: "Department",
-      type: "short text",
+      label: "Select one",
+      type: "multiple choice",
+      choices: ["Day Scholar", "Hosteller"],
       required: true,
+      other: false,
     },
     {
-      label: "Why do you want to join Optica?",
-      type: "long text",
+      label: "Select your department preference",
+      type: "multiple choice grid",
+      rows: ["Preference 1", "Preference 2"],
+      coloumns: [["Technical, Management"], ["Technical, Management"]],
     },
   ],
 };
+
+export default formDetails;
