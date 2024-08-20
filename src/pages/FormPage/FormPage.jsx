@@ -3,7 +3,7 @@ import FormContainer from "../../Components/FormContainer";
 
 const FormPage = () => {
   return (
-    <div style={{ backgroundColor: "gray" }}>
+    <div style={{ backgroundColor: "black" }}>
       <FormContainer />
     </div>
   );
