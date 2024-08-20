@@ -10,17 +10,28 @@ const BoxWithHeading = ({
   placeholder,
   labels,
   dropdownConfig,
+  name,
+  checkboxesNames,
+  dropdownNames,
+  otherkey,
+  required,
 }) => {
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedRadio, setSelectedRadio] = useState("");
   const [otherValue, setOtherValue] = useState("");
+  const [selectedValues, setSelectedValues] = useState([]);
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setSelectedOption(name === "other" ? "other" : value);
+  const handleRadioChange = (event) => {
+    setSelectedRadio(event.target.value);
   };
-
   const handleOtherInputChange = (event) => {
     setOtherValue(event.target.value);
+  };
+
+  const handleSelectChange = (event, index) => {
+    const newValue = event.target.value;
+    setSelectedValues((prevValues) =>
+      prevValues.map((value, i) => (i === index ? newValue : value))
+    );
   };
 
   const renderFormControls = () => {
@@ -31,21 +42,32 @@ const BoxWithHeading = ({
             <Form.Check
               type="radio"
               label={label}
-              name={`label`}
+              name={name}
+              value={
+                label == "others" || label == "Other" || label == "other"
+                  ? "__other_option__"
+                  : label
+              }
+              // checked={
+              //   selectedRadio === label || selectedRadio === "_other_option_"
+              // }
+              onChange={handleRadioChange}
               className="form-radio"
             />
-            {/* {label == "others" || label == "Other" || label == "other" ? (
+            {(label == "others" || label == "Other" || label == "other") &&
+            selectedRadio == "__other_option__" ? (
               <div>
                 <br />
                 <Form.Control
                   type="text"
+                  name={otherkey}
                   placeholder="Enter other option"
                   className="form-input"
                 />
               </div>
             ) : (
               ""
-            )} */}
+            )}
           </div>
         ));
       case "checkbox":
@@ -54,6 +76,8 @@ const BoxWithHeading = ({
             key={index}
             type="checkbox"
             label={label}
+            value={label}
+            name={checkboxesNames[index]}
             className="form-checkbox"
           />
         ));
@@ -66,11 +90,14 @@ const BoxWithHeading = ({
             <Form.Control
               as="select"
               className="form-select"
-              value={selectedOption || dropdown.options[0]}
-              onChange={handleChange}
+              name={dropdownNames[index]}
+              defaultValue="Department"
+              value={selectedValues[index]}
+              onChange={(e) => handleSelectChange(e, index)}
             >
               {dropdown.options.map((option, optionIndex) => (
                 <option
+                  // selected={optionIndex === 0}
                   style={{ fontSize: "20px" }}
                   key={optionIndex}
                   disabled={optionIndex === 0}
@@ -88,6 +115,7 @@ const BoxWithHeading = ({
           <Form.Control
             key={index}
             type="text"
+            name={name}
             placeholder={placeholder || `Enter ${heading} ${index + 1}`}
             className="form-input"
           />
@@ -98,7 +126,9 @@ const BoxWithHeading = ({
   return (
     <Form.Group as={Col} className="box-with-heading mb-3">
       <div className="box-content">
-        <Form.Label className="form-label">{heading}</Form.Label>
+        <Form.Label className="form-label">
+          {heading} {required ? "*" : ""}
+        </Form.Label>
         {/* <Form.Control
           type={type}
           placeholder={placeholder}

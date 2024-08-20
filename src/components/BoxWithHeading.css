@@ -12,7 +12,7 @@
 
 .form-label {
   color: #f6f5f5;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 10px;
   display: block;
 }
@@ -52,7 +52,7 @@
 
 .form-select {
   background-color: #fff;
-  width: auto;
+  width: 20px;
   min-width: 150px;
 }
 
