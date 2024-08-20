@@ -12,23 +12,33 @@ const formDetails = {
   formInputs: [
     {
       label: "Full Name",
-      type: "short text",
+      type: "text",
+      placeholder: "Your Name",
       required: true,
     },
     {
       label: "Email",
-      type: "short text",
+      type: "text",
+      placeholder: "Your Email",
+      required: true,
+    },
+    {
+      label: "Enrollment Number",
+      type: "text",
+      placeholder: "Your Enrollment Number",
       required: true,
     },
     {
       label: "Mobile Number",
-      type: "short text",
+      type: "text",
+      placeholder: "Your Mobile Number",
       required: true,
     },
     {
       label: "Branch",
-      type: "multiple choice",
-      choices: ["CSE", "ECE", "ME", "CE", "EE", "CHE", "MME", "EP", "BT"],
+      type: "text",
+      labels: ["CSE", "ECE", "ME", "CE", "EE", "CHE", "MME", "EP", "BT"],
+      placeholder: "Your Branch",
       required: true,
       other: true,
     },

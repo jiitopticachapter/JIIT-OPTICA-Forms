@@ -4,10 +4,11 @@ import BoxWithHeading from "./BoxWithHeading";
 import SubmitButton from "./SubmitButton";
 import "./FormContainer.css";
 import optica_logo from "./../assets/optica_logo.png";
+import formDetails from "../formDetails";
 
 const FormContainer = () => {
   const handleSubmit = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
 
     const formData = new FormData(event.target);
 
@@ -35,7 +36,7 @@ const FormContainer = () => {
 
   return (
     <Container className="form-container">
-      <h1 className="form-title">Optica Volunteer Recruitment</h1>
+      <h1 className="form-title">{formDetails.formHeading.heading}</h1>
       <p className="form-criteria">Eligibility Criteria:</p>
       <ul className="criteria-list">
         <li>2nd-year students only.</li>
