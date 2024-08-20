@@ -1,0 +1,91 @@
+.box-with-heading {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 20px;
+}
+
+.box-content {
+  padding: 10px;
+}
+
+.form-label {
+  color: #f6f5f5;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #f6f5f5 !important;
+  border-radius: 0;
+  padding: 0 0 5px 0;
+  margin-bottom: 5px;
+  caret-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  max-width: 300px;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.form-input:focus {
+  background-color: transparent;
+  border-color: #fff;
+  box-shadow: none;
+}
+
+.form-file {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ccc;
+  color: #f6f5f5;
+  width: auto;
+  max-width: 300px;
+  margin: 15px 0px 10px 0px;
+}
+
+.form-select {
+  background-color: #fff;
+  width: auto;
+  min-width: 150px;
+}
+
+.dropdown-container {
+  display: flex;
+
+  align-items: center;
+  margin-top: 15px;
+}
+
+.dropdown-label {
+  color: #f6f5f5;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.form-select:focus,
+.form-file:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.form-select option {
+  color: #495057;
+  background-color: #ffffff;
+}
+
+/* Option styling */
+.form-select option:first-child {
+  color: #6c757d; /* Disabled option color */
+  background-color: #e9ecef;
+}
+
+.form-select option:hover {
+  background-color: #e2e6ea; /* Hover background color */
+}
