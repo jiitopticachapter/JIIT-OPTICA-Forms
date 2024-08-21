@@ -7,8 +7,8 @@ import optica_logo from "./../assets/optica_logo.png";
 import formDetails from "../formDetails";
 
 const FormContainer = () => {
-  const handleSubmit = (event) => {
-    // event.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
     const formData = new FormData(event.target);
 
@@ -31,7 +31,21 @@ const FormContainer = () => {
       }
     }
 
-    window.location.href = "/form-submitted";
+    try {
+      await fetch(
+        "https://docs.google.com/forms/d/e/1FAIpQLSdGclVRoQJ06r4QpvbMxKcPg40bOJZOV6EeOo3vIwPdOQrbnw/formResponse",
+        {
+          method: "POST",
+          body: formData,
+          mode: "no-cors", // Prevent CORS issues (Google Forms don't return CORS headers)
+        }
+      );
+      // Redirect to your custom success page after form submission
+      window.location.href = "/form-submitted";
+    } catch (error) {
+      console.error("Error submitting form", error);
+      alert("There was an issue submitting the form. Please try again.");
+    }
   };
 
   return (
@@ -46,16 +60,11 @@ const FormContainer = () => {
         To know more about Optica, check out our website and Instagram handle.
       </p>
 
-      <form
-        action="https://docs.google.com/forms/d/e/1FAIpQLScESBlH09SrmXiOS3OKPZjUoYqErOt6hzRjJxtXNtGIJWmrCg/formResponse"
-        method="post"
-        onSubmit={handleSubmit}
-      >
+      <form onSubmit={handleSubmit}>
         <BoxWithHeading
           heading="Full Name"
           name="entry.160466415"
           required={true}
-          // description="Your Answer"
           type="text"
           placeholder="Your Name"
           quantity={1}
@@ -65,7 +74,6 @@ const FormContainer = () => {
           heading="Email"
           name="entry.315258667"
           required={true}
-          // description="Your Answer"
           type="email"
           placeholder="Your Email"
           quantity={1}
@@ -74,7 +82,6 @@ const FormContainer = () => {
         <BoxWithHeading
           heading="Enrollment Number"
           required={true}
-          // description="Your Answer"
           name="entry.64548622"
           type="text"
           placeholder="Your Enrollment Number"
@@ -83,8 +90,7 @@ const FormContainer = () => {
 
         <BoxWithHeading
           heading="Mobile Number"
-          required="true"
-          // description="Your Answer"
+          required={true}
           name="entry.495226908"
           type="text"
           placeholder="Your Mobile Number"
@@ -93,7 +99,7 @@ const FormContainer = () => {
 
         <BoxWithHeading
           heading="Branch"
-          required="true"
+          required={true}
           type="radio"
           name="entry.132863625"
           otherkey="entry.132863625.other_option_response"
@@ -102,17 +108,11 @@ const FormContainer = () => {
 
         <BoxWithHeading
           heading="Select One"
-          required="true"
+          required={true}
           type="radio"
           name="entry.1502158801"
           labels={["Day Scholar", "Hosteller"]}
         />
-
-        {/* <BoxWithHeading
-        heading="Testing boxes"
-        type="checkbox"
-        labels={["box1", "box2"]}
-      /> */}
 
         <BoxWithHeading
           heading="Select your department preferences"
