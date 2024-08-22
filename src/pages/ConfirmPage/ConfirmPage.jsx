@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
 import "./ConfirmPage.css";
-import optica_logo from "./../../assets/optica_logo.png";
+import optica_logo from "../../assets/optica_logo.png";
 import { useNavigate } from "react-router-dom";
-import Stars from "./../../Components/Background/Stars";
+import Stars from "../../Components/Background/Stars";
 
 const ConfirmPage = () => {
   const navigate = useNavigate();
