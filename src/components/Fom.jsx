@@ -165,7 +165,7 @@ const FormContainer = () => {
                 "Management",
                 "Technical",
                 "PR",
-                "Digital",
+                "Digital/Cinematography",
                 "Marketing/Outreach",
                 "Creative",
               ],
