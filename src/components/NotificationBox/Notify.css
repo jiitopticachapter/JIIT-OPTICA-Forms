@@ -19,3 +19,11 @@
   top: 30px; /* Position when visible */
   opacity: 1; /* Make visible */
 }
+
+@media screen and (max-width: 500px) {
+  .notification {
+    padding: 12px 12px;
+
+    min-width: fit-content;
+  }
+}

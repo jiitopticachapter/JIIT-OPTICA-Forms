@@ -1,91 +1,167 @@
 .form-container {
-    background-color: #000;
-    padding: 50px;
-    width: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #fff;
-    position: relative;
-    overflow: hidden;
+  /* background-color: #000; */
+  padding: 50px;
+  width: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 200;
+}
+
+.form-container::before,
+.form-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: transparent;
+}
+
+.form-container::before {
+  position: relative;
+  margin-left: 10px;
+}
+
+.form-container::after {
+  position: relative;
+  margin-right: 10px;
+}
+
+.form-container::before {
+  border-left: 4px dashed #ccc;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+}
+
+.form-container::after {
+  border-right: 4px dashed #ccc;
+  right: 0;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.form-criteria,
+.info-text,
+.criteria-list {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.info-text {
+  margin-bottom: 40px;
+}
+
+.optica-logo {
+  height: 50px;
+}
+
+.form-footer {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lottie-player1 {
+  position: absolute;
+  z-index: 1;
+  height: 150px;
+  opacity: 0.5;
+  /* width: 200px; */
+  left: -10px;
+  top: -20px;
+}
+
+.lottie-player2 {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.4;
+  height: 200px;
+  /* width: 200px; */
+  right: 10px;
+  top: 300px;
+}
+
+.lottie-player21 {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.4;
+  height: 250px;
+  /* width: 200px; */
+  right: 10px;
+  top: 920px;
+}
+
+.lottie-player22 {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.6;
+  height: 200px;
+  /* width: 200px; */
+  right: 10px;
+  bottom: -1000px;
+}
+
+.lottie-player3 {
+  position: absolute;
+  z-index: 1;
+  height: 120px;
+  opacity: 0.5;
+  left: -40px;
+  bottom: -1320px;
+}
+.lottie-player31 {
+  position: absolute;
+  z-index: 1;
+  height: 120px;
+  opacity: 0.2;
+  transform: rotate(-30deg);
+  top: 540px;
+  bottom: -1320px;
+}
+.lottie-player32 {
+  position: absolute;
+  z-index: 1;
+  height: 120px;
+  opacity: 0.5;
+  transform: rotate(50deg);
+  left: 0px;
+  bottom: -540px;
+}
+.lottie-player33 {
+  position: absolute;
+  z-index: 1;
+  height: 120px;
+  transform: rotate(180deg);
+  opacity: 0.5;
+  left: 260px;
+  top: 20px;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 30px;
+    width: 100%;
   }
-  
-  .form-container::before,
-  .form-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: transparent;
-  }
-  
-  .form-container::before {
-    position: relative;
-    margin-left: 10px;
-  }
-  
-  .form-container::after {
-    position: relative;
-    margin-right: 10px;
-  }
-  
-  .form-container::before {
-    border-left: 4px dashed #ccc;
-    left: 0;
-    position: absolute;
-    top: 10px;
-    bottom: 0;
-  }
-  
-  .form-container::after {
-    border-right: 4px dashed #ccc;
-    right: 0;
-    position: absolute;
-    top: 10px;
-    bottom: 0;
-  }
-  
-  .form-title {
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: "Saira Stencil One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .form-criteria,
-  .info-text,
-  .criteria-list {
-    color: #ccc;
-    margin-bottom: 20px;
-  }
-  
-  .info-text {
-    margin-bottom: 40px;
-  }
-  
-  .optica-logo {
-    height: 50px;
-  }
-  
   .form-footer {
     margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 35px;
   }
-  
-  @media (max-width: 768px) {
-    .form-container {
-      padding: 30px;
-      width: 100%;
-    }
-    .form-footer {
-      margin-top: 40px;
-      flex-direction: column;
-      gap: 35px;
-    }
-    .optica-logo {
-      height: 70px;
-    }
+  .optica-logo {
+    height: 70px;
   }
-  
+}
