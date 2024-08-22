@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
-import BoxWithHeading from "./BoxWithHeading";
-import SubmitButton from "./SubmitButton";
+import BoxWithHeading from "./BoxWithHeading.jsx";
+import SubmitButton from "./SubmitButton.jsx";
 import "./FormContainer.css";
 import optica_logo from "./../assets/optica_logo.png";
-import formDetails from "../formDetails";
-import Notify from "./NotificationBox/Notify";
+import formDetails from "../formDetails.jsx";
+import Notify from "./NotificationBox/Notify.jsx";
 import LoaderPage from "../pages/Loader/Loader.jsx";
 
 const FormContainer = () => {
