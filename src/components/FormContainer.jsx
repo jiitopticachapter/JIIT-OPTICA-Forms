@@ -4,7 +4,7 @@ import BoxWithHeading from "./BoxWithHeading.jsx";
 import SubmitButton from "./SubmitButton.jsx";
 import "./FormContainer.css";
 import optica_logo from "./../assets/optica_logo.png";
-import formDetails from "../formDetails.jsx";
+// import formDetails from "../formDetails.js";
 import Notify from "./NotificationBox/Notify.jsx";
 import LoaderPage from "../pages/Loader/Loader.jsx";
 
@@ -68,7 +68,7 @@ const FormContainer = () => {
           onClose={handleNotificationClose}
         />
       )}
-      <h1 className="form-title">{formDetails.formHeading.heading}</h1>
+      <h1 className="form-title">Optica Volunteer Recruitment</h1>
       <p className="form-criteria">Eligibility Criteria:</p>
       <ul className="criteria-list">
         <li>2nd-year students only.</li>
