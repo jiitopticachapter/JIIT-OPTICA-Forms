@@ -6,9 +6,11 @@ import "./FormContainer.css";
 import optica_logo from "./../assets/optica_logo.png";
 import formDetails from "../formDetails";
 import Notify from "./NotificationBox/Notify";
+import LoaderPage from "../pages/Loader/Loader.jsx";
 
 const FormContainer = () => {
   const [notify, setNotify] = useState(false);
+  const [loading, setLoading] = useState(false);
   const handleNotificationClose = () => {
     setNotify(false); // Reset notification state
   };
@@ -18,15 +20,15 @@ const FormContainer = () => {
     const formData = new FormData(event.target);
 
     const requiredFields = [
-      "entry.160466415", // Full Name
-      "entry.315258667", // Email
-      "entry.64548622", // Enrollment Number
-      "entry.495226908", // Mobile Number
-      "entry.132863625", // Branch
-      "entry.1502158801", // Select One
-      "entry.1665027859", // Preference 1
-      "entry.884192987", // Preference 2
-      "entry.1138863528", // Student Hub Details
+      "entry.2092238618", // Full Name
+      "entry.1556369182", // Email
+      "entry.479301265", // Enrollment Number
+      "entry.366439804", // Mobile Number
+      "entry.588393791", // Branch
+      "entry.1753222212", // Select One
+      "entry.1133192386", // Preference 1
+      "entry.1738577120", // Preference 2
+      "entry.1089087003", // Why optica
     ];
 
     for (let field of requiredFields) {
@@ -36,10 +38,10 @@ const FormContainer = () => {
         return;
       }
     }
-
+    setLoading(true);
     try {
       await fetch(
-        "https://docs.google.com/forms/d/e/1FAIpQLScESBlH09SrmXiOS3OKPZjUoYqErOt6hzRjJxtXNtGIJWmrCg/formResponse",
+        "https://docs.google.com/forms/d/e/1FAIpQLSdGclVRoQJ06r4QpvbMxKcPg40bOJZOV6EeOo3vIwPdOQrbnw/formResponse",
         {
           method: "POST",
           body: formData,
@@ -52,11 +54,14 @@ const FormContainer = () => {
     } catch (error) {
       console.error("Error submitting form", error);
       alert("There was an issue submitting the form. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <Container className="form-container">
+      {loading ? <LoaderPage /> : ""}
       {notify && (
         <Notify
           message="Please fill all fields!"
@@ -70,13 +75,27 @@ const FormContainer = () => {
         <li>No extensive experience is required.</li>
       </ul>
       <p className="info-text">
-        To know more about Optica, check out our website and Instagram handle.
+        To know more about Optica, check out our{" "}
+        <a
+          href="https://jiitopticachapter.com"
+          style={{ color: "#ccc", fontWeight: "bolder" }}
+        >
+          website
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://www.instagram.com/jiitopticachapter/"
+          style={{ color: "#ccc", fontWeight: "bolder" }}
+        >
+          Instagram handle
+        </a>
+        .
       </p>
 
       <form onSubmit={handleSubmit}>
         <BoxWithHeading
           heading="Full Name"
-          name="entry.160466415"
+          name="entry.2092238618"
           required={true}
           type="text"
           placeholder="Your Name"
@@ -86,7 +105,7 @@ const FormContainer = () => {
 
         <BoxWithHeading
           heading="Email"
-          name="entry.315258667"
+          name="entry.1556369182"
           required={true}
           type="email"
           placeholder="Your Email"
@@ -97,7 +116,7 @@ const FormContainer = () => {
         <BoxWithHeading
           heading="Enrollment Number"
           required={true}
-          name="entry.64548622"
+          name="entry.479301265"
           type="text"
           placeholder="Your Enrollment Number"
           quantity={1}
@@ -107,7 +126,7 @@ const FormContainer = () => {
         <BoxWithHeading
           heading="Mobile Number"
           required={true}
-          name="entry.495226908"
+          name="entry.366439804"
           type="text"
           placeholder="Your Mobile Number"
           quantity={1}
@@ -118,8 +137,8 @@ const FormContainer = () => {
           heading="Branch"
           required={true}
           type="radio"
-          name="entry.132863625"
-          otherkey="entry.132863625.other_option_response"
+          name="entry.588393791"
+          otherkey="entry.588393791.other_option_response"
           labels={["CSE", "ECE", "IT", "BBA", "BIOTECH", "BCA", "Other"]}
           errorMsg="Please select your branch."
         />
@@ -128,7 +147,7 @@ const FormContainer = () => {
           heading="Select One"
           required={true}
           type="radio"
-          name="entry.1502158801"
+          name="entry.1753222212"
           labels={["Day Scholar", "Hosteller"]}
           errorMsg="Please select one."
         />
@@ -137,7 +156,7 @@ const FormContainer = () => {
           heading="Select your department preferences"
           type="dropdown"
           required={true}
-          dropdownNames={["entry.1665027859", "entry.884192987"]}
+          dropdownNames={["entry.1133192386", "entry.1738577120"]}
           dropdownConfig={[
             {
               key: "Preference 1",
@@ -170,8 +189,8 @@ const FormContainer = () => {
         <BoxWithHeading
           heading="Are you part of any other student hub? If yes, please list their names and your designation in that particular hub."
           type="text"
-          required={true}
-          name="entry.1138863528"
+          required={false}
+          name="entry.1437722345"
           placeholder="Your Answer"
           quantity={1}
           errorMsg="This field is required."
@@ -180,16 +199,17 @@ const FormContainer = () => {
         <BoxWithHeading
           heading="Why do you want to join Optica?"
           type="text"
-          required={false}
-          name="entry.216938608"
+          required={true}
+          name="entry.1089087003"
           placeholder="Your Answer"
           quantity={1}
+          errorMsg="This field is required."
         />
 
         <BoxWithHeading
           heading="Resume (If Available)"
           required={false}
-          name="entry.1708441962"
+          name="entry.2119262957"
           description="Paste your resume link (Gdrive or dropbox)"
           type="text"
           placeholder="Your Resume link"
