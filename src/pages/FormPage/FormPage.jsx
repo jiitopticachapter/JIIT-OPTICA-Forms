@@ -1,5 +1,5 @@
 import React from "react";
-import FormContainer from "./../../Components/FormContainer";
+import FormContainer from "../../components/Fom";
 import stars_bg from "./../../assets/stars_bg.png";
 
 const FormPage = () => {
