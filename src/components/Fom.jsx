@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import BoxWithHeading from "./BoxWithHeading.jsx";
 import SubmitButton from "./SubmitButton.jsx";
-import "./formcontainer.css";
+import "Forem.css";
 import optica_logo from "./../assets/optica_logo.png";
 // import formDetails from "../formDetails.js";
 import Notify from "./NotificationBox/Notify.jsx";
