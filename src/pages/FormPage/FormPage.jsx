@@ -1,7 +1,6 @@
 import React from "react";
-import FormContainer from "../../Components/FormContainer.jsx";
-import Stars from "../../Components/Background/Stars";
-import stars_bg from "../../assets/stars_bg.png";
+import FormContainer from "./../../Components/FormContainer";
+import stars_bg from "./../../assets/stars_bg.png";
 
 const FormPage = () => {
   return (

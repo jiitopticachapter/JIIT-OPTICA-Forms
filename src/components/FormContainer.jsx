@@ -6,7 +6,7 @@ import "./FormContainer.css";
 import optica_logo from "./../assets/optica_logo.png";
 // import formDetails from "../formDetails.js";
 import Notify from "./NotificationBox/Notify.jsx";
-import LoaderPage from "../pages/Loader/Loader.jsx";
+import LoaderPage from "./../pages/Loader/Loader.jsx";
 
 const FormContainer = () => {
   const [notify, setNotify] = useState(false);
