@@ -121,7 +121,7 @@
   height: 120px;
   opacity: 0.5;
   left: -40px;
-  bottom: -1320px;
+  bottom: -1370px;
 }
 .lottie-player31 {
   position: absolute;
@@ -130,7 +130,7 @@
   opacity: 0.2;
   transform: rotate(-30deg);
   top: 540px;
-  bottom: -1320px;
+  bottom: -1500px;
 }
 .lottie-player32 {
   position: absolute;
@@ -144,11 +144,11 @@
 .lottie-player33 {
   position: absolute;
   z-index: 1;
-  height: 120px;
+  height: 100px;
   transform: rotate(180deg);
   opacity: 0.5;
-  left: 260px;
-  top: 20px;
+  right: 0px;
+  top: 40px;
 }
 
 @media (max-width: 768px) {
