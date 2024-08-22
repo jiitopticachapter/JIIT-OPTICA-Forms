@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import BoxWithHeading from "./BoxWithHeading";
 import SubmitButton from "./SubmitButton";
 import "./FormContainer.css";
 import optica_logo from "./../assets/optica_logo.png";
 import formDetails from "../formDetails";
+import Notify from "./NotificationBox/Notify";
 
 const FormContainer = () => {
+  const [notify, setNotify] = useState(false);
+  const handleNotificationClose = () => {
+    setNotify(false); // Reset notification state
+  };
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -26,20 +31,22 @@ const FormContainer = () => {
 
     for (let field of requiredFields) {
       if (!formData.get(field)) {
-        alert("Please fill all required fields.");
+        setNotify(true);
+        setTimeout(() => setNotify(true), 0);
         return;
       }
     }
 
     try {
       await fetch(
-        "https://docs.google.com/forms/d/e/1FAIpQLSdGclVRoQJ06r4QpvbMxKcPg40bOJZOV6EeOo3vIwPdOQrbnw/formResponse",
+        "https://docs.google.com/forms/d/e/1FAIpQLScESBlH09SrmXiOS3OKPZjUoYqErOt6hzRjJxtXNtGIJWmrCg/formResponse",
         {
           method: "POST",
           body: formData,
           mode: "no-cors", // Prevent CORS issues (Google Forms don't return CORS headers)
         }
       );
+
       // Redirect to your custom success page after form submission
       window.location.href = "/form-submitted";
     } catch (error) {
@@ -50,6 +57,12 @@ const FormContainer = () => {
 
   return (
     <Container className="form-container">
+      {notify && (
+        <Notify
+          message="Please fill all fields!"
+          onClose={handleNotificationClose}
+        />
+      )}
       <h1 className="form-title">{formDetails.formHeading.heading}</h1>
       <p className="form-criteria">Eligibility Criteria:</p>
       <ul className="criteria-list">
@@ -68,6 +81,7 @@ const FormContainer = () => {
           type="text"
           placeholder="Your Name"
           quantity={1}
+          errorMsg="Name is required."
         />
 
         <BoxWithHeading
@@ -77,6 +91,7 @@ const FormContainer = () => {
           type="email"
           placeholder="Your Email"
           quantity={1}
+          errorMsg="Email is required."
         />
 
         <BoxWithHeading
@@ -86,6 +101,7 @@ const FormContainer = () => {
           type="text"
           placeholder="Your Enrollment Number"
           quantity={1}
+          errorMsg="Enrollment Number is required."
         />
 
         <BoxWithHeading
@@ -95,6 +111,7 @@ const FormContainer = () => {
           type="text"
           placeholder="Your Mobile Number"
           quantity={1}
+          errorMsg="Mobile Number is required."
         />
 
         <BoxWithHeading
@@ -104,6 +121,7 @@ const FormContainer = () => {
           name="entry.132863625"
           otherkey="entry.132863625.other_option_response"
           labels={["CSE", "ECE", "IT", "BBA", "BIOTECH", "BCA", "Other"]}
+          errorMsg="Please select your branch."
         />
 
         <BoxWithHeading
@@ -112,6 +130,7 @@ const FormContainer = () => {
           type="radio"
           name="entry.1502158801"
           labels={["Day Scholar", "Hosteller"]}
+          errorMsg="Please select one."
         />
 
         <BoxWithHeading
@@ -145,6 +164,7 @@ const FormContainer = () => {
               ],
             },
           ]}
+          errorMsg="Please select your department preferences."
         />
 
         <BoxWithHeading
@@ -154,6 +174,7 @@ const FormContainer = () => {
           name="entry.1138863528"
           placeholder="Your Answer"
           quantity={1}
+          errorMsg="This field is required."
         />
 
         <BoxWithHeading

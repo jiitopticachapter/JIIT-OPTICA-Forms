@@ -7,7 +7,8 @@
 }
 
 .box-content {
-  padding: 10px;
+  padding: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .form-label {
@@ -88,4 +89,20 @@
 
 .form-select option:hover {
   background-color: #e2e6ea; /* Hover background color */
+}
+
+.box-content {
+  position: relative;
+}
+
+.error-message {
+  color: rgb(244, 179, 179);
+  /* background-color: yellow; */
+  font-size: 12px;
+  /* margin-top: 5px; */
+  position: absolute;
+  bottom: -17px;
+  left: 20px;
+  width: 100%;
+  text-align: left;
 }

@@ -1,0 +1,21 @@
+.notification {
+  position: fixed;
+  top: -100px; /* Start above the viewport */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff4d4d;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0; /* Start as invisible */
+  z-index: 1000;
+}
+
+.notification.show {
+  top: 30px; /* Position when visible */
+  opacity: 1; /* Make visible */
+}

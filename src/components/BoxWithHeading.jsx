@@ -15,10 +15,20 @@ const BoxWithHeading = ({
   dropdownNames,
   otherkey,
   required,
+  errorMsg,
 }) => {
   const [selectedRadio, setSelectedRadio] = useState("");
   const [otherValue, setOtherValue] = useState("");
   const [selectedValues, setSelectedValues] = useState([]);
+  const [error, setError] = useState("");
+
+  const validateField = (value) => {
+    if (required && !value) {
+      setError(`${errorMsg}`);
+    } else {
+      setError("");
+    }
+  };
 
   const handleRadioChange = (event) => {
     setSelectedRadio(event.target.value);
@@ -117,6 +127,7 @@ const BoxWithHeading = ({
             type="text"
             name={name}
             placeholder={placeholder || `Enter ${heading} ${index + 1}`}
+            onBlur={(e) => validateField(e.target.value)}
             className="form-input"
           />
         ));
@@ -142,6 +153,7 @@ const BoxWithHeading = ({
         ) : (
           ""
         )}
+        {error && <p className="error-message">{error}</p>}
       </div>
     </Form.Group>
   );
