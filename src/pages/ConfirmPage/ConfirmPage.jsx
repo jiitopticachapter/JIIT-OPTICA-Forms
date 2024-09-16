@@ -27,9 +27,8 @@ const ConfirmPage = () => {
             </div>
             <h1 className="confirm-title">Submission Successful!</h1>
             <p className="confirm-message">
-              Thank you for submitting your application! <br /> We appreciate
-              your interest in Optica and will review your submission shortly.
-              Stay tuned for our response.
+              Your form has been submitted. <br /> Will see you soon in Optica's
+              Orientaion.
             </p>
             <Button
               variant="primary"

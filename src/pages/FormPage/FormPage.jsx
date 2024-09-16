@@ -26,13 +26,13 @@ const FormPage = () => {
           src={animationData0}
           className="lottie-player21"
         />
-        <Player
+        {/* <Player
           autoplay
           loop
           src={animationData0}
           className="lottie-player22"
-        />
-        <Player autoplay loop src={animationData1} className="lottie-player3" />
+        /> */}
+        {/* <Player autoplay loop src={animationData1} className="lottie-player3" /> */}
         <Player
           autoplay
           loop

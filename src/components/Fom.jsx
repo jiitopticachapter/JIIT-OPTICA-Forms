@@ -14,13 +14,69 @@ import { Player } from "@lottiefiles/react-lottie-player";
 const FormContainer = () => {
   const [notify, setNotify] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [notificationmsg, setNotification] = useState("");
   const handleNotificationClose = () => {
     setNotify(false); // Reset notification state
   };
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault();
+
+  //   const formData = new FormData(event.target);
+
+  //   const requiredFields = [
+  //     "entry.2092238618", // Full Name
+  //     "entry.1556369182", // Email
+  //     "entry.479301265", // Enrollment Number
+  //     "entry.366439804", // Mobile Number
+  //     "entry.588393791", // Branch
+  //     // "entry.1753222212", // Select One
+  //     // "entry.1133192386", // Preference 1
+  //     // "entry.1738577120", // Preference 2
+  //     // "entry.1089087003", // Why optica
+  //   ];
+
+  //   for (let field of requiredFields) {
+  //     if (!formData.get(field)) {
+  //       setNotify(true);
+  //       setTimeout(() => setNotify(true), 0);
+  //       return;
+  //     }
+  //   }
+  //   setLoading(true);
+  //   try {
+  //     await fetch(
+  //       "https://docs.google.com/forms/d/e/1FAIpQLSdGclVRoQJ06r4QpvbMxKcPg40bOJZOV6EeOo3vIwPdOQrbnw/formResponse",
+  //       {
+  //         method: "POST",
+  //         body: formData,
+  //         mode: "no-cors", // Prevent CORS issues (Google Forms don't return CORS headers)
+  //       }
+  //     );
+
+  //     // Redirect to your custom success page after form submission
+  //     window.location.href = "/form-submitted";
+  //   } catch (error) {
+  //     console.error("Error submitting form", error);
+  //     alert("There was an issue submitting the form. Please try again.");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    setNotification("");
+
     const formData = new FormData(event.target);
+
+    const data = {
+      name: formData.get("entry.2092238618"), // Full Name
+      email: formData.get("entry.1556369182"), // Email
+      enrollment: formData.get("entry.479301265"), // Enrollment Number
+      mobile: formData.get("entry.366439804"), // Mobile Number
+      branch: formData.get("entry.588393791"), // Branch
+    };
 
     const requiredFields = [
       "entry.2092238618", // Full Name
@@ -28,10 +84,10 @@ const FormContainer = () => {
       "entry.479301265", // Enrollment Number
       "entry.366439804", // Mobile Number
       "entry.588393791", // Branch
-      "entry.1753222212", // Select One
-      "entry.1133192386", // Preference 1
-      "entry.1738577120", // Preference 2
-      "entry.1089087003", // Why optica
+      // "entry.1753222212", // Select One
+      // "entry.1133192386", // Preference 1
+      // "entry.1738577120", // Preference 2
+      // "entry.1089087003", // Why optica
     ];
 
     for (let field of requiredFields) {
@@ -41,19 +97,46 @@ const FormContainer = () => {
         return;
       }
     }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const mobileRegex = /^[0-9]{10}$/;
+
+    if (!emailRegex.test(data.email)) {
+      setNotify(true);
+      setNotification("Invalid email format.");
+      return;
+    }
+
+    if (!mobileRegex.test(data.mobile)) {
+      setNotify(true);
+      setNotification("Invalid mobile number. It should be 10 digits.");
+      return;
+    }
+
     setLoading(true);
+
     try {
-      await fetch(
-        "https://docs.google.com/forms/d/e/1FAIpQLSdGclVRoQJ06r4QpvbMxKcPg40bOJZOV6EeOo3vIwPdOQrbnw/formResponse",
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbwlC2N8f_c_etseMude8ZeR5gy78HxwAoRL4Z7yKSUb3QRwaEr6NNFkfMSmY0izO4vqLg/exec",
         {
           method: "POST",
-          body: formData,
-          mode: "no-cors", // Prevent CORS issues (Google Forms don't return CORS headers)
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+          mode: "no-cors",
         }
       );
 
-      // Redirect to your custom success page after form submission
-      window.location.href = "/form-submitted";
+      // console.log(response);
+
+      // const result = await response;
+      // console.log("result is: ", result);
+      // if (result.status === "success") {
+      window.location.href = "/form-submitted"; // Redirect on success
+      // } else {
+      //   alert("Error submitting form. Please check all fields.");
+      // }
     } catch (error) {
       console.error("Error submitting form", error);
       alert("There was an issue submitting the form. Please try again.");
@@ -67,16 +150,15 @@ const FormContainer = () => {
       {/* <Player autoplay loop src={animationData0} className="lottie-player" /> */}
       {loading ? <LoaderPage /> : ""}
       {notify && (
-        <Notify
-          message="Please fill all fields!"
-          onClose={handleNotificationClose}
-        />
+        <Notify message={notificationmsg} onClose={handleNotificationClose} />
       )}
-      <h1 className="form-title">Optica Volunteer Recruitment</h1>
-      <p className="form-criteria">Eligibility Criteria:</p>
+      <h1 className="form-title">Optica's Orientation Registeration Form</h1>
+      <p className="form-criteria">Information regarding Orientation:</p>
       <ul className="criteria-list">
-        <li>2nd-year students only.</li>
-        <li>No extensive experience is required.</li>
+        <li>For 1st year students.</li>
+        <li>Date: 20th september 2024</li>
+        <li>Time: 5:00 PM</li>
+        <li>Venue: LT-1</li>
       </ul>
       <p className="info-text">
         To know more about Optica, check out our{" "}
@@ -108,13 +190,13 @@ const FormContainer = () => {
         />
 
         <BoxWithHeading
-          heading="Email"
+          heading="Gmail Id"
           name="entry.1556369182"
           required={true}
           type="email"
-          placeholder="Your Email"
+          placeholder="Your gmail"
           quantity={1}
-          errorMsg="Email is required."
+          errorMsg="Gmail is required."
         />
 
         <BoxWithHeading
@@ -147,16 +229,16 @@ const FormContainer = () => {
           errorMsg="Please select your branch."
         />
 
-        <BoxWithHeading
+        {/* <BoxWithHeading
           heading="Select One"
           required={true}
           type="radio"
           name="entry.1753222212"
           labels={["Day Scholar", "Hosteller"]}
           errorMsg="Please select one."
-        />
+        /> */}
 
-        <BoxWithHeading
+        {/* <BoxWithHeading
           heading="Select your department preferences"
           type="dropdown"
           required={true}
@@ -188,9 +270,9 @@ const FormContainer = () => {
             },
           ]}
           errorMsg="Please select your department preferences."
-        />
+        /> */}
 
-        <BoxWithHeading
+        {/* <BoxWithHeading
           heading="Are you part of any other student hub? If yes, please list their names and your designation in that particular hub."
           type="text"
           required={false}
@@ -198,9 +280,9 @@ const FormContainer = () => {
           placeholder="Your Answer"
           quantity={1}
           errorMsg="This field is required."
-        />
+        /> */}
 
-        <BoxWithHeading
+        {/* <BoxWithHeading
           heading="Why do you want to join Optica?"
           type="text"
           required={true}
@@ -208,9 +290,9 @@ const FormContainer = () => {
           placeholder="Your Answer"
           quantity={1}
           errorMsg="This field is required."
-        />
+        /> */}
 
-        <BoxWithHeading
+        {/* <BoxWithHeading
           heading="Resume (If Available)"
           required={false}
           name="entry.2119262957"
@@ -218,7 +300,7 @@ const FormContainer = () => {
           type="text"
           placeholder="Your Resume link"
           quantity={1}
-        />
+        /> */}
 
         <div className="form-footer">
           <SubmitButton label="Submit" />

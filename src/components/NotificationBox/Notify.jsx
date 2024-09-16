@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Notify.css";
 
-const Notify = ({ message, duration = 3000, onClose }) => {
+const Notify = ({
+  message = "All fields required.",
+  duration = 3000,
+  onClose,
+}) => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
