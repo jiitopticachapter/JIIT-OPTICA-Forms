@@ -155,7 +155,9 @@ const FormContainer = () => {
       <h1 className="form-title">Optica's Orientation Registeration Form</h1>
       <p className="form-criteria">Information regarding Orientation:</p>
       <ul className="criteria-list">
-        <li>For 1st year students.</li>
+        <li>
+          <strong>For 1st year students.</strong>
+        </li>
         <li>Date: 20th september 2024</li>
         <li>Time: 5:00 PM</li>
         <li>Venue: LT-1</li>
