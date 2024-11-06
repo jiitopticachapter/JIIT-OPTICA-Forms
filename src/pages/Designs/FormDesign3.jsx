@@ -21,10 +21,11 @@ import {
 } from "react-icons/md";
 import optica_logo from "./../../assets/optica_logo.png";
 import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
-import { Data } from "./../../Components/DataStructure/Data";
+// import { Data } from "./../../Components/DataStructure/Data";
+import { Data } from "../../Components/DataStructure/Data.js";
 import HandleSubmit from "../../Components/DataStructure/HandleSubmit";
 import useError from "../../Components/DataStructure/ValidateError";
-import { Errors } from "../../Components/DataStructure/ValidateError";
+// import { Errors } from "../../Components/DataStructure/ValidateError";
 import FormDataComponent from "../../Components/DataStructure/FormFields";
 import { FormStylesInfo } from "../../Components/DataStructure/FormFieldsStylesInfo";
 import Loader from "../Loader/Loader";
