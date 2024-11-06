@@ -9,7 +9,7 @@ import {
   MdRemoveCircleOutline,
 } from "react-icons/md";
 import { Errors } from "./ValidateError";
-import { Data } from "./Data";
+import Data from "./Data.js";
 import { Form } from "react-bootstrap";
 
 const FormDataComponent = (validateField, formStyle) => {

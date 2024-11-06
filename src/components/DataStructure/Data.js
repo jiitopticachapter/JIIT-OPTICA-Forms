@@ -124,4 +124,4 @@ const Data = {
   ],
 };
 
-export { Data };
+export default Data;
