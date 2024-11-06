@@ -22,13 +22,17 @@ import {
 import optica_logo from "./../../assets/optica_logo.png";
 import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
-// import Data from "../../Components/DataStructure/Data";
 // import LatentData from "../../Components/DataStructure/Data.js";
-import HandleSubmit from "./../../Components/DataStructure/HandleSubmit.jsx";
-import useError from "./../../Components/DataStructure/ValidateError.jsx";
+// import HandleSubmit from "./../../Components/DataStructure/HandleSubmit.jsx";
+// import useError from "./../../Components/DataStructure/ValidateError.jsx";
+// // import { Errors } from "../../Components/DataStructure/ValidateError";
+// import FormDataComponent from "./../../Components/DataStructure/FormFields.jsx";
+// import { FormStylesInfo } from "./../../Components/DataStructure/FormFieldsStylesInfo.js";
+import HandleSubmit from "./HandleSubmit.jsx";
+import useError from "./ValidateError.jsx";
 // import { Errors } from "../../Components/DataStructure/ValidateError";
-import FormDataComponent from "./../../Components/DataStructure/FormFields.jsx";
-import { FormStylesInfo } from "./../../Components/DataStructure/FormFieldsStylesInfo.js";
+import FormDataComponent from "./FormFields.jsx";
+import { FormStylesInfo } from "./FormFieldsStyleInfo.js";
 import Loader from "../Loader/Loader";
 
 const LatentData = {
