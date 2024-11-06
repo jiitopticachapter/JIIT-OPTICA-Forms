@@ -23,13 +23,139 @@ import optica_logo from "./../../assets/optica_logo.png";
 import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
 // import Data from "../../Components/DataStructure/Data";
-import LatentData from "../../Components/DataStructure/Data.js";
+// import LatentData from "../../Components/DataStructure/Data.js";
 import HandleSubmit from "../../Components/DataStructure/HandleSubmit";
 import useError from "../../Components/DataStructure/ValidateError";
 // import { Errors } from "../../Components/DataStructure/ValidateError";
 import FormDataComponent from "../../Components/DataStructure/FormFields";
 import { FormStylesInfo } from "../../Components/DataStructure/FormFieldsStylesInfo";
 import Loader from "../Loader/Loader";
+const LatentData = {
+  instructionInfo: {
+    heading: "Instructions",
+    description: "Read the below instructions carefully:",
+    instructions: [
+      "Show Case your talent within 90 seconds.",
+      "Chits will be provided to you for rating your performance.",
+      "No offence will be tolerated on any jokes either by other participants or judges.",
+      "Rs 4000 Cash Prize will be awarded to a single winner. If there is a tie then it will be decided by the mutual agreement of the respective players to either split the prize money or play a tie-breaker further.",
+    ],
+    checkboxStatus: {
+      show: true,
+      label: "I have read the instructions carefully.",
+      errorMsg: "Please check the box.",
+    },
+  },
+  formInfo: [
+    {
+      heading: "Name",
+      name: "entry.name",
+      required: true,
+      type: "text",
+      placeholder: "Enter your name",
+      errorMsg: "Name is required.",
+    },
+    {
+      heading: "Email",
+      name: "entry.email",
+      required: true,
+      type: "email",
+      placeholder: "Enter your email",
+      errorMsg: "Email is required.",
+      regex: "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+    },
+    {
+      heading: "Phone",
+      name: "entry.phone",
+      required: true,
+      type: "text",
+      placeholder: "Enter your phone number",
+      errorMsg: "Phone number is required.",
+      regex: "^[0-9]{10}$",
+    },
+    {
+      heading: "Branch",
+      name: "entry.branch",
+      required: true,
+      type: "radio",
+      labels: [
+        "Computer Science",
+        "Information Technology",
+        "Electronics & Communication",
+        "EE VLSI",
+        "ECE Adv Com.",
+        "Mathematics & Computing",
+        "BCA",
+        "BBA",
+        "MBA",
+        "Others",
+      ],
+      otherKey: ".other_option_response",
+      errorMsg: "Please select your branch.",
+    },
+    {
+      heading: "Batch",
+      name: "entry.batch",
+      required: true,
+      type: "text",
+      placeholder: "Enter your batch",
+      errorMsg: "Batch is required.",
+      // regex: "^[0-9]{10}$",
+    },
+    {
+      heading: "Are you single (relationship status)?",
+      name: "entry.relationship_status",
+      required: true,
+      type: "radio",
+      labels: ["Yes", "No"],
+      otherKey: ".other_option_response",
+      errorMsg: "Above field is required.",
+    },
+    {
+      heading: "Do you have any sibling?",
+      name: "entry.sibling",
+      required: true,
+      type: "radio",
+      labels: ["Yes", "No"],
+      otherKey: ".other_option_response",
+      errorMsg: "Above field is required.",
+    },
+
+    {
+      heading: "What would you do if your gender was reversed for one day?",
+      name: "entry.gender_reveresed",
+      required: true,
+      type: "textarea",
+      placeholder: "write your answer here ...",
+      errorMsg: "Above field is required.",
+    },
+    {
+      heading: "Most daring thing you have done?",
+      name: "entry.daring_thing",
+      required: true,
+      type: "textarea",
+      placeholder: "write your answer here ...",
+      errorMsg: "Above field is required.",
+    },
+    {
+      heading: "Your biggest achievement till date.",
+      name: "entry.biggest_achievement",
+      required: true,
+      type: "textarea",
+      placeholder: "write your answer here ...",
+      errorMsg: "Above field is required.",
+    },
+    {
+      heading: "Goals in your life (apart from academics).",
+      name: "entry.life_goals",
+      required: true,
+      type: "textarea",
+      placeholder: "write your answer here ...",
+      errorMsg: "Above field is required.",
+    },
+  ],
+};
+
 const MacOSWindow = styled.div`
   background: #121212;
   color: #e0e0e0;
