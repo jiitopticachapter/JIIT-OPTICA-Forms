@@ -20,6 +20,7 @@ import {
   MdTextFields,
 } from "react-icons/md";
 import optica_logo from "./../../assets/optica_logo.png";
+import eventpic from "./../../assets/eventpic.jpeg";
 import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
 // import LatentData from "../../Components/DataStructure/Data.js";
