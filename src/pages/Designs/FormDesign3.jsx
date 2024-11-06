@@ -22,7 +22,8 @@ import {
 import optica_logo from "./../../assets/optica_logo.png";
 import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
-import Data from "../../Components/DataStructure/Data";
+// import Data from "../../Components/DataStructure/Data";
+import LatentData from "../../Components/DataStructure/Data";
 import HandleSubmit from "../../Components/DataStructure/HandleSubmit";
 import useError from "../../Components/DataStructure/ValidateError";
 // import { Errors } from "../../Components/DataStructure/ValidateError";
@@ -640,7 +641,7 @@ const JaypeeGotLatent = () => {
                 textAlign: "center",
               }}
             >
-              {Data.instructionInfo.heading}
+              {LatentData.instructionInfo.heading}
             </h3>
             <Instructions>
               <TerminalCommand>
@@ -651,19 +652,21 @@ const JaypeeGotLatent = () => {
                   <HighlightText>Venue: </HighlightText> LT-5 (JBS)
                 </EventDetails>
                 <br />
-                {Data.instructionInfo.description} <br />
+                {LatentData.instructionInfo.description} <br />
                 <br />
-                {Data.instructionInfo.instructions.map((instruction, index) => (
-                  <div key={index}>
-                    <span style={{ color: "#aaaaaa" }}>
-                      {`Instruction-${index + 1}/~`}
-                      <br />$
-                    </span>{" "}
-                    {instruction}
-                    <br />
-                    <br />
-                  </div>
-                ))}
+                {LatentData.instructionInfo.instructions.map(
+                  (instruction, index) => (
+                    <div key={index}>
+                      <span style={{ color: "#aaaaaa" }}>
+                        {`Instruction-${index + 1}/~`}
+                        <br />$
+                      </span>{" "}
+                      {instruction}
+                      <br />
+                      <br />
+                    </div>
+                  )
+                )}
               </TerminalCommand>
             </Instructions>
             <Tagdiv

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Data from "./Data.js";
+// import Data from "./Data.js";
+import LatentData from "./Data";
 import { Errors } from "./ValidateError";
 import { toast } from "react-hot-toast";
 import { showLoaderfunction } from "../../pages/Designs/FormDesign3";
@@ -16,7 +17,7 @@ const HandleSubmit = async (event, validateField) => {
   let formIsValid = true;
 
   {
-    Data.formInfo.map((field, index) => {
+    LatentData.formInfo.map((field, index) => {
       let value = null;
 
       let isFile = null;

@@ -1,4 +1,4 @@
-const Data = {
+const LatentData = {
   instructionInfo: {
     heading: "Instructions",
     description: "Read the below instructions carefully:",
@@ -124,4 +124,4 @@ const Data = {
   ],
 };
 
-export default Data;
+export default LatentData;
