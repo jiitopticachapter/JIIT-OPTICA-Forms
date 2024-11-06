@@ -200,9 +200,11 @@ const TerminalCommand = styled.pre`
   padding: 1rem;
   color: #e0e0e0;
   line-height: 1.6;
+  font-weight: bold;
+  font-size: 1rem;
   overflow: auto;
   white-space: pre-wrap;
-  font-family: "Courier New", Courier, monospace;
+  // font-family: "Courier New", Courier, monospace;
   @media (min-width: 768px) {
     padding: 1rem;
   }

@@ -13,8 +13,8 @@ const ConfirmPage = () => {
   };
 
   return (
-    <div>
-      <Stars speed={0.02} />
+    <div style={{ backgroundColor: "black" }}>
+      {/* <Stars speed={0.02} /> */}
       <div className="confirm-page">
         <Container className="confirm-page-container">
           <div className="confirm-content">
@@ -25,18 +25,13 @@ const ConfirmPage = () => {
                 className="success-icon"
               />
             </div>
-            <h1 className="confirm-title">Submission Successful!</h1>
+            <h1 className="confirm-title">Submission Successful !!</h1>
             <p className="confirm-message">
-              Your form has been submitted. <br /> Will see you soon in Optica's
-              Orientaion.
+              Your form has been submitted.
+              <br />
+              Thank you for registering. We look forward to seeing you on
+              November 9th at Jaypee's Got Latent.
             </p>
-            <Button
-              variant="primary"
-              className="back-home-button"
-              onClick={handleBackToHome}
-            >
-              Back to Home
-            </Button>
           </div>
         </Container>
       </div>

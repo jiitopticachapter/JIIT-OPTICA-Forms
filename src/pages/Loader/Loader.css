@@ -6,6 +6,10 @@
   z-index: 2000;
   top: 0;
   left: 0;
+  backdrop-filter: blur(5px);
+  /* Adds a blur effect */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black background */
 }
 
 .loader-page {
@@ -14,17 +18,23 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.2); /* Optional: background color */
+  background-color: rgba(32, 32, 32, 0.1);
+  /* Optional: you can keep or remove this background color */
 }
 
 /* Spinner styling */
 .spinner {
-  border: 8px solid rgba(255, 255, 255, 0.2); /* Light gray border */
+  border: 8px solid rgba(255, 255, 255, 0.2);
+  /* Light gray border */
   border-radius: 50%;
-  border-top: 8px solid #fff; /* White border on top */
-  width: 50px; /* Spinner size */
-  height: 50px; /* Spinner size */
-  animation: spin 1s linear infinite; /* Spin animation */
+  border-top: 8px solid #fff;
+  /* White border on top */
+  width: 50px;
+  /* Spinner size */
+  height: 50px;
+  /* Spinner size */
+  animation: spin 1s linear infinite;
+  /* Spin animation */
 }
 
 /* Spinner spin animation */
@@ -32,6 +42,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -39,7 +50,11 @@
 
 /* Message styling */
 .message {
-  color: #fff; /* White text color */
-  font-size: 18px; /* Font size */
-  margin-top: 20px; /* Space between spinner and message */
+  color: #fff;
+  /* White text color */
+  font-size: 18px;
+  /* Font size */
+  margin-top: 20px;
+  font-weight: bold;
+  /* Space between spinner and message */
 }

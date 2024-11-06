@@ -38,13 +38,10 @@ const BoxWithHeading = ({
   };
 
   const handleSelectChange = (event, index) => {
-    console.log("called ----------------");
     const newValue = event.target.value;
     setSelectedValues((prevValues) =>
       prevValues.map((value, i) => (i === index ? newValue : value))
     );
-
-    console.log(selectedValues);
   };
 
   const renderFormControls = () => {

@@ -75,6 +75,8 @@ const FormDataComponent = (validateField, formStyle) => {
 
   return (
     <>
+      <StyledTitle>JAYPEE'S GOT LATENT</StyledTitle>
+      {/* <RequiredNote>Fields marked with an asterisk are required.</RequiredNote> */}
       {Data.formInfo.map((field, index) => {
         if (field.type === "text" || field.type === "email") {
           return (
@@ -390,16 +392,54 @@ const FormDataComponent = (validateField, formStyle) => {
         }
         return null;
       })}
-      <Form.Group>
-        {/* <Form.Check
-          type="checkbox"
-          label="I agree to the terms and conditions"
-          style={{ color: "#e0e0e0" }}
-        /> */}
-      </Form.Group>
+      {/* {Data.instructionInfo.checkboxStatus.show ? (
+        <Form.Group>
+          <Form.Check
+            type="checkbox"
+            label={Data.instructionInfo.checkboxStatus.label}
+            style={{ color: "#e0e0e0" }}
+          />{" "}
+          <Error>{Data.instructionInfo.checkboxStatus.errorMsg}</Error>
+        </Form.Group>
+      ) : (
+        ""
+      )} */}
     </>
   );
 };
+
+const StyledTitle = styled.h2`
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff; /* Pure white color */
+  // color: #ff5f57;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  // background: linear-gradient(90deg, #0066ff, #33ccff);
+  background-clip: text;
+  // color: transparent;
+  -webkit-background-clip: text;
+  // -webkit-text-fill-color: #ffffff;
+  // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    // color: #ff5f57;
+    padding: 0rem;
+  }
+`;
+
+const RequiredNote = styled.p`
+  font-size: 1rem;
+  color: #ff5f57; /* Red color for visibility */
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  &::before {
+    content: "*";
+    margin-right: 4px;
+  }
+`;
 
 const ThemedInputWrapper = styled.div`
   display: flex;

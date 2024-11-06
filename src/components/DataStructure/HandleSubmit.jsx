@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { Data } from "./Data";
 import { Errors } from "./ValidateError";
+import { toast } from "react-hot-toast";
+import { showLoaderfunction } from "../../pages/Designs/FormDesign3";
 
 const HandleSubmit = async (event, validateField) => {
   event.preventDefault();
+  console.log("handle submit");
 
   // setNotification("");
+  // setShowAlert(false);
 
   const formData = new FormData(event.target);
   let data = {};
@@ -67,20 +71,20 @@ const HandleSubmit = async (event, validateField) => {
   }
 
   if (!formIsValid) {
-    // setNotify(true);
+    toast.error("Please fill all required fields.");
     // setNotification("Please correct the errors in the form.");
-    alert("all filed required");
+    // alert("all filed required");
     console.log("error is: ", Errors);
     return;
   }
 
   console.log("data is: ", data);
-  return;
-  setLoading(true);
+  // return;
+  showLoaderfunction(true);
 
   try {
     const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbwlC2N8f_c_etseMude8ZeR5gy78HxwAoRL4Z7yKSUb3QRwaEr6NNFkfMSmY0izO4vqLg/exec",
+      "https://script.google.com/macros/s/AKfycbyng1CgUpRoLGqBcJ3jPiAkYu_NLATUfC8Otv8iDtVv9CJqSuxYHMtWF8yJSk9whC4a8Q/exec",
       {
         method: "POST",
         headers: {
@@ -104,7 +108,8 @@ const HandleSubmit = async (event, validateField) => {
     console.error("Error submitting form", error);
     alert("There is an issue while submitting the form. Please try again.");
   } finally {
-    setLoading(false);
+    // setLoading(false);
+    showLoaderfunction(false);
   }
 };
 

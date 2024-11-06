@@ -20,6 +20,8 @@ const useError = () => {
     if (typeof regex === "string") {
       regex = new RegExp(regex);
     }
+    console.log("validate field called");
+    console.log("errors are: ", Errors);
 
     // Required field check
 
@@ -33,7 +35,7 @@ const useError = () => {
       Errors[name] = newError;
     }
     // Regex validation (for email, mobile, etc.)
-    else if (required && regex && heading) {
+    else if (required && regex && heading && !regex.test(value)) {
       if (!regex.test(value)) {
         const newError = `${heading} is not correct.`;
         setError((prevData) => ({
@@ -65,7 +67,9 @@ const useError = () => {
         delete newData[name];
         return newData;
       });
-      delete Errors[name];
+      if (Errors[name]) {
+        delete Errors[name]; // Remove from Errors object
+      }
     }
   };
 
