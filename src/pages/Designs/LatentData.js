@@ -56,6 +56,7 @@ const LatentData = {
         "BCA",
         "BBA",
         "MBA",
+        "BioTech",
         "Others",
       ],
       otherKey: ".other_option_response",
