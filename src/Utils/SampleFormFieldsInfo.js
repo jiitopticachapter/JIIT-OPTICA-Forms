@@ -1,4 +1,6 @@
-const Data = {
+//This is sample formfieldsInfo for reference
+
+const FormFieldsInfo = {
   instructionInfo: {
     heading: "Instructions",
     description: "Read the below instructions carefully:",
@@ -117,4 +119,4 @@ const Data = {
   ],
 };
 
-export { Data };
+export default FormFieldsInfo;

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import BoxWithHeading from "./BoxWithHeading.jsx";
-import SubmitButton from "./SubmitButton.jsx";
-import "./Forem.css";
+import "./OutdatedForm.css";
 import optica_logo from "./../assets/optica_logo.png";
 // import formDetails from "../formDetails.js";
 import Notify from "./NotificationBox/Notify.jsx";
-import animationData0 from "./../assets/Animation0.json";
-import animationData1 from "./../assets/Animation1.json";
-import LoaderPage from "./../pages/Loader/Loader.jsx";
+import animationData0 from "../assets/Animation0.json";
+import animationData1 from "../assets/Animation1.json";
+import LoaderPage from "../pages/Loader/Loader.jsx";
 import { Player } from "@lottiefiles/react-lottie-player";
 
 const FormContainer = () => {
@@ -305,7 +305,13 @@ const FormContainer = () => {
         /> */}
 
         <div className="form-footer">
-          <SubmitButton label="Submit" />
+          <Button
+            variant="outline-light"
+            type="submit"
+            className="submit-button"
+          >
+            Submit
+          </Button>
           <img src={optica_logo} alt="jiitoptica" className="optica-logo" />
         </div>
       </form>

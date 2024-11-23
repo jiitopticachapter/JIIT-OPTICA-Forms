@@ -1,12 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-// import FormPage from "./pages/FormPage/FormPage.jsx";
 import ConfirmPage from "./pages/ConfirmPage/ConfirmPage.jsx";
-// import CollegeSocietyForm from "./pages/Designs/FormDesign.jsx";
-// import WhatsAppForm from "./pages/Designs/FormDesign2.jsx";
-// import GameTheme from "./pages/Designs/GameTheme.jsx";
-import JaypeeGotLatent from "./pages/Designs/FormDesign3.jsx";
+import JaypeeGotLatent from "./pages/Designs/JaypeeGotLatentDesign.jsx";
 import { Toaster } from "react-hot-toast";
+import MacOSDesign from "./pages/Designs/MacOSDesign.jsx";
+import WhatsAppDesign from "./pages/Designs/WhatsappDesign.jsx";
 
 const App = () => {
   return (
@@ -15,14 +13,8 @@ const App = () => {
         <Route path="/" element={<JaypeeGotLatent />} />
         <Route path="/form-submitted" element={<ConfirmPage />} />
       </Routes>
-      {/* <CollegeSocietyForm /> */}
-      {/* <JaypeeGotLatent /> */}
-      <Toaster />
-      {/* <Stage /> */}
 
-      {/* <WhatsAppForm /> */}
-      {/* <FormPage /> */}
-      {/* <GameTheme /> */}
+      <Toaster />
     </>
   );
 };

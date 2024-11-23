@@ -8,10 +8,10 @@ import {
   MdList,
   MdRemoveCircleOutline,
 } from "react-icons/md";
-import { Errors } from "./ValidateError";
-// import Data from "./Data.js";
-import LatentData from "./Data";
+import { Errors } from "../../Utils/ValidateError";
+import FormFieldsInfo from "../../Utils/FormFieldsInfo";
 import { Form } from "react-bootstrap";
+import eventpic from "../../assets/eventpic.jpeg";
 
 const FormDataComponent = (validateField, formStyle) => {
   const iconMap = {
@@ -76,9 +76,10 @@ const FormDataComponent = (validateField, formStyle) => {
 
   return (
     <>
+      {/* <StyledImage src={eventpic} alt="Jaypee's Got Latent" /> */}
       <StyledTitle>JAYPEE'S GOT LATENT</StyledTitle>
       {/* <RequiredNote>Fields marked with an asterisk are required.</RequiredNote> */}
-      {LatentData.formInfo.map((field, index) => {
+      {FormFieldsInfo.formInfo.map((field, index) => {
         if (field.type === "text" || field.type === "email") {
           return (
             <Form.Group key={index}>
@@ -409,6 +410,16 @@ const FormDataComponent = (validateField, formStyle) => {
   );
 };
 
+const StyledImage = styled.img`
+  width: 100%; /* Adjust width as needed */
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensures centered alignment if needed */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow for better visual appeal */
+`;
+
 const StyledTitle = styled.h2`
   font-size: 3rem;
   font-weight: bold;
@@ -424,7 +435,7 @@ const StyledTitle = styled.h2`
   // -webkit-text-fill-color: #ffffff;
   // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
   @media (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
     // color: #ff5f57;
     padding: 0rem;
   }

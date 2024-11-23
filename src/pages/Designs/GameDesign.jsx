@@ -1,7 +1,7 @@
 import React from "react";
 
-const GameTheme = () => {
+const GameDesign = () => {
   return <div>GameTheme</div>;
 };
 
-export default GameTheme;
+export default GameDesign;

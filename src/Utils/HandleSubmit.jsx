@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import FormFieldsInfo from "./FormFieldsInfo";
 import { Errors } from "./ValidateError";
 import { toast } from "react-hot-toast";
-import { showLoaderfunction } from "../pages/Designs/FormDesign3";
+import { showLoaderfunction } from "../pages/Designs/JaypeeGotLatentDesign";
 
 const HandleSubmit = async (event, validateField) => {
   event.preventDefault();

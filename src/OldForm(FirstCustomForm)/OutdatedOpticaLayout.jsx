@@ -1,11 +1,11 @@
 import React from "react";
-import FormContainer from "../../components/Fom";
+import FormContainer from "./OutdatedForm";
 import stars_bg from "./../../assets/stars_bg.png";
-import animationData0 from "./../../assets/Animation0.json";
-import animationData1 from "./../../assets/Animation1.json";
+import animationData0 from "../assets/Animation0.json";
+import animationData1 from "../assets/Animation1.json";
 import { Player } from "@lottiefiles/react-lottie-player";
 
-const FormPage = () => {
+const FirstCustomForm = () => {
   return (
     <div
       style={{
@@ -57,4 +57,4 @@ const FormPage = () => {
   );
 };
 
-export default FormPage;
+export default FirstCustomForm;
