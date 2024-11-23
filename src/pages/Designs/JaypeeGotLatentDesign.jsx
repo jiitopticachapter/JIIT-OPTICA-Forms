@@ -24,10 +24,10 @@ import eventpic from "./../../assets/eventpic.jpeg";
 import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import HandleSubmit from "../../Utils/HandleSubmit.jsx";
 import useError from "../../Utils/ValidateError.jsx";
-import FormDataComponent from "../../Components/FormFields/FormFields.jsx";
 import { FormStylesInfo } from "../../Utils/FormFieldsStyleInfo.js";
 import Loader from "../Loader/Loader.jsx";
 import FormFieldsInfo from "../../Utils/FormFieldsInfo.js";
+import FormDataComponent from "../../Components/FormFields/FormFields.jsx";
 
 let showLoader = false;
 const showLoaderfunction = (value) => {
