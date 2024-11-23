@@ -27,7 +27,7 @@ import useError from "../../Utils/ValidateError.jsx";
 import { FormStylesInfo } from "../../Utils/FormFieldsStyleInfo.js";
 import Loader from "../Loader/Loader.jsx";
 import FormFieldsInfo from "../../Utils/FormFieldsInfo.js";
-import FormDataComponent from "../../Components/FormFields.jsx";
+import FormDataComponent from "./FormFields.jsx";
 
 let showLoader = false;
 const showLoaderfunction = (value) => {
