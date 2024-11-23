@@ -24,7 +24,7 @@ import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import HandleSubmit from "../../Utils/HandleSubmit";
 import useError from "../../Utils/ValidateError";
 import { Errors } from "../../Utils/ValidateError";
-import FormDataComponent from "../../Components/FormFields/FormFields";
+import FormDataComponent from "./FormFields";
 import { FormStylesInfo } from "../../Utils/FormFieldsStyleInfo";
 
 const MacOSDesign = () => {
@@ -63,17 +63,19 @@ const MacOSDesign = () => {
               <TerminalCommand>
                 {FormFieldsInfo.instructionInfo.description} <br />
                 <br />
-                {FormFieldsInfo.instructionInfo.instructions.map((instruction, index) => (
-                  <div key={index}>
-                    <span style={{ color: "#aaaaaa" }}>
-                      {`Instruction-${index + 1}/~`}
-                      <br />$
-                    </span>{" "}
-                    {instruction}
-                    <br />
-                    <br />
-                  </div>
-                ))}
+                {FormFieldsInfo.instructionInfo.instructions.map(
+                  (instruction, index) => (
+                    <div key={index}>
+                      <span style={{ color: "#aaaaaa" }}>
+                        {`Instruction-${index + 1}/~`}
+                        <br />$
+                      </span>{" "}
+                      {instruction}
+                      <br />
+                      <br />
+                    </div>
+                  )
+                )}
               </TerminalCommand>
             </Instructions>
             <Tagdiv
