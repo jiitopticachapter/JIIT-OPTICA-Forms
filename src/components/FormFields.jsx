@@ -8,8 +8,8 @@ import {
   MdList,
   MdRemoveCircleOutline,
 } from "react-icons/md";
-import { Errors } from "../../Utils/ValidateError";
-import FormFieldsInfo from "../../Utils/FormFieldsInfo";
+import { Errors } from "../Utils/ValidateError";
+import FormFieldsInfo from "../Utils/FormFieldsInfo";
 import { Form } from "react-bootstrap";
 import eventpic from "../../assets/eventpic.jpeg";
 

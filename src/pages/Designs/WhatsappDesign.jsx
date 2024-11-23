@@ -21,7 +21,7 @@ import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import opticaLogo from "./../../assets/optica_logo.png";
 import optica_o from "./../../assets/optica_o.png";
 import whatsapp_bg from "./../../assets/whatsapp_bg.png";
-import FormDataComponent from "./FormFields";
+import FormDataComponent from "../../Components/FormFields";
 import HandleSubmit from "../../Utils/HandleSubmit";
 import useError from "../../Utils/ValidateError";
 import { FormStylesInfo } from "../../Utils/FormFieldsStyleInfo";

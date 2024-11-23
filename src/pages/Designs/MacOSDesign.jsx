@@ -24,7 +24,7 @@ import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import HandleSubmit from "../../Utils/HandleSubmit";
 import useError from "../../Utils/ValidateError";
 import { Errors } from "../../Utils/ValidateError";
-import FormDataComponent from "./FormFields";
+import FormDataComponent from "../../Components/FormFields";
 import { FormStylesInfo } from "../../Utils/FormFieldsStyleInfo";
 
 const MacOSDesign = () => {
