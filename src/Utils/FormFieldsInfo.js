@@ -1,4 +1,4 @@
-const LatentData = {
+const FormFieldsInfo = {
   instructionInfo: {
     heading: "Instructions",
     description: "Read the below instructions carefully:",
@@ -23,6 +23,7 @@ const LatentData = {
       placeholder: "Enter your name",
       errorMsg: "Name is required.",
     },
+
     {
       heading: "Email",
       name: "entry.email",
@@ -56,7 +57,6 @@ const LatentData = {
         "BCA",
         "BBA",
         "MBA",
-        "BioTech",
         "Others",
       ],
       otherKey: ".other_option_response",
@@ -125,4 +125,4 @@ const LatentData = {
   ],
 };
 
-export default LatentData;
+export default FormFieldsInfo;

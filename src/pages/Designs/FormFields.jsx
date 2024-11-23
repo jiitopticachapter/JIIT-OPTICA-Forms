@@ -8,9 +8,9 @@ import {
   MdList,
   MdRemoveCircleOutline,
 } from "react-icons/md";
-import { Errors } from "./ValidateError";
+import { Errors } from "../../Utils/ValidateError";
 // import Data from "./Data.js";
-import LatentData from "./LatentData";
+import FormFieldsInfo from "../../Utils/FormFieldsInfo";
 import { Form } from "react-bootstrap";
 import eventpic from "../../assets/eventpic.jpeg";
 
@@ -80,7 +80,7 @@ const FormDataComponent = (validateField, formStyle) => {
       {/* <StyledImage src={eventpic} alt="Jaypee's Got Latent" /> */}
       <StyledTitle>JAYPEE'S GOT LATENT</StyledTitle>
       {/* <RequiredNote>Fields marked with an asterisk are required.</RequiredNote> */}
-      {LatentData.formInfo.map((field, index) => {
+      {FormFieldsInfo.formInfo.map((field, index) => {
         if (field.type === "text" || field.type === "email") {
           return (
             <Form.Group key={index}>
