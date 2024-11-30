@@ -567,7 +567,7 @@ const ThemedTextarea = styled.textarea`
 const ThemedSelect = styled(Form.Select)`
   background: transparent;
   border: none;
-  color: #ffffff;
+  color: rgb(170, 170, 170);
   flex: 1;
   &::placeholder {
     color: #aaaaaa;
