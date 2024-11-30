@@ -4,6 +4,7 @@ import FormFieldsInfo from "./FormFieldsInfo";
 import { Errors } from "./ValidateError";
 import { toast } from "react-hot-toast";
 import { showLoaderfunction } from "../pages/Designs/JaypeeGotLatentDesign";
+import switchingForm from "./SwitchingForm-Sample-Main";
 
 const HandleSubmit = async (event, validateField) => {
   event.preventDefault();
@@ -84,17 +85,19 @@ const HandleSubmit = async (event, validateField) => {
   showLoaderfunction(true);
 
   try {
-    const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbyng1CgUpRoLGqBcJ3jPiAkYu_NLATUfC8Otv8iDtVv9CJqSuxYHMtWF8yJSk9whC4a8Q/exec",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-        mode: "no-cors",
-      }
-    );
+    if (switchingForm.type === "Main") {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbyng1CgUpRoLGqBcJ3jPiAkYu_NLATUfC8Otv8iDtVv9CJqSuxYHMtWF8yJSk9whC4a8Q/exec",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+          mode: "no-cors",
+        }
+      );
+    }
 
     // console.log(response);
 

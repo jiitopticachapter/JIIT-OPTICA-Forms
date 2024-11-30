@@ -11,6 +11,22 @@ const FormFieldsInfo = {
       "Click Submit to finalize your registration.",
     ],
   },
+  headerInfo: {
+    heading: "Sample Form",
+  },
+  footerInfo: {
+    contactus: {
+      heading: "For any query please contact:",
+      person1: {
+        name: "Person 1 Name",
+        Phno: "+91 8570XXXXXX",
+      },
+      person2: {
+        name: "Person 2 Name",
+        Phno: "+91 9026XXXXXX",
+      },
+    },
+  },
   formInfo: [
     {
       heading: "Name",

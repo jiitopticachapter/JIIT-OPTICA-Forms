@@ -3,15 +3,31 @@ const FormFieldsInfo = {
     heading: "Instructions",
     description: "Read the below instructions carefully:",
     instructions: [
-      "Show Case your talent within 90 seconds.",
-      "Chits will be provided to you for rating your performance.",
-      "No offence will be tolerated on any jokes either by other participants or judges.",
-      "Rs 4000 Cash Prize will be awarded to a single winner. If there is a tie then it will be decided by the mutual agreement of the respective players to either split the prize money or play a tie-breaker further.",
+      "Fill out all fields accurately.",
+      "Upload necessary documents.",
+      "Ensure contact information is up-to-date.",
+      "Click Submit to finalize your registration.",
     ],
     checkboxStatus: {
       show: true,
       label: "I have read the instructions carefully.",
       errorMsg: "Please check the box.",
+    },
+  },
+  headerInfo: {
+    heading: "JAYPEE'S GOT LATENT",
+  },
+  footerInfo: {
+    contactus: {
+      heading: "For any query please contact:",
+      person1: {
+        name: "Yash Mittal",
+        Phno: "+91 8570940287",
+      },
+      person2: {
+        name: "Shantanu Pandey",
+        Phno: "+91 9026152678",
+      },
     },
   },
   formInfo: [
@@ -23,7 +39,6 @@ const FormFieldsInfo = {
       placeholder: "Enter your name",
       errorMsg: "Name is required.",
     },
-
     {
       heading: "Email",
       name: "entry.email",

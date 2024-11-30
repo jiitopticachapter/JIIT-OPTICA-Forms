@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<JaypeeGotLatent />} />
+        <Route path="/" element={<MacOSDesign />} />
         <Route path="/form-submitted" element={<ConfirmPage />} />
       </Routes>
 

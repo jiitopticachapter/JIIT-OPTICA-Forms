@@ -9,9 +9,14 @@ import {
   MdRemoveCircleOutline,
 } from "react-icons/md";
 import { Errors } from "../../Utils/ValidateError";
-import FormFieldsInfo from "../../Utils/FormFieldsInfo";
+import MainFormFieldsInfo from "../../Utils/FormFieldsInfo";
 import { Form } from "react-bootstrap";
 import eventpic from "../../assets/eventpic.jpeg";
+import switchingForm from "../../Utils/SwitchingForm-Sample-Main";
+import SampleFormFieldsInfo from "../../Utils/SampleFormFieldsInfo";
+
+const FormFieldsInfo =
+  switchingForm.title == "Main" ? MainFormFieldsInfo : SampleFormFieldsInfo;
 
 const FormDataComponent = (validateField, formStyle) => {
   const iconMap = {
@@ -77,7 +82,26 @@ const FormDataComponent = (validateField, formStyle) => {
   return (
     <>
       {/* <StyledImage src={eventpic} alt="Jaypee's Got Latent" /> */}
-      <StyledTitle>JAYPEE'S GOT LATENT</StyledTitle>
+      <StyledTitle>{FormFieldsInfo.headerInfo.heading}</StyledTitle>
+      {switchingForm.title != "Main" ? (
+        <>
+          <h3
+            style={{
+              color: "#ff5f57",
+              opacity: 0.5,
+              fontFamily: "'Courier New', Courier, monospace",
+              fontWeight: "bolder",
+              marginBottom: "20px",
+              fontSize: "1rem",
+            }}
+          >
+            * This is a sample form
+          </h3>
+        </>
+      ) : (
+        ""
+      )}
+      <h2></h2>
       {/* <RequiredNote>Fields marked with an asterisk are required.</RequiredNote> */}
       {FormFieldsInfo.formInfo.map((field, index) => {
         if (field.type === "text" || field.type === "email") {
