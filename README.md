@@ -29,4 +29,4 @@ These forms allows users to create dynamic, customizable forms using JSON config
 
 ## View The Sample
 
-The forms are up and running on [forms.jiitopticachapter.com](https://jiitopticachapter.com/)
+The forms are up and running on [forms.jiitopticachapter.com](https://forms.jiitopticachapter.com/)
