@@ -27,7 +27,7 @@ import { Errors } from "../../Utils/ValidateError";
 import FormDataComponent from "./FormFields.jsx";
 import { FormStylesInfo } from "../../Utils/FormFieldsStyleInfo";
 import FormFieldsInfo from "../../Utils/FormFieldsInfo.js";
-import HCVERMA from "./../../assets/HCVERMA.jpeg";
+import HCVERMA from "./../../assets/HCVERMA.png";
 
 const MacOSDesign = () => {
   const { validateField } = useError();
