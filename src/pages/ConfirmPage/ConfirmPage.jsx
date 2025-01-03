@@ -26,7 +26,7 @@ const ConfirmPage = () => {
                 className="success-icon"
               />
             </div>
-            {switchingForm.title != "Main" ? (
+            {switchingForm.type != "Main" ? (
               <>
                 <h3
                   style={{

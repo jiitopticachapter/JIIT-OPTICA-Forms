@@ -42,7 +42,7 @@ const FormStylesInfo = {
       borderRadius: "0",
       border: "none",
       placeholderColor: "#aaaaaa",
-      color: "red",
+      color: "#ffffff",
       onFocus: {
         color: "#000",
         bgColor: "#ffffff",

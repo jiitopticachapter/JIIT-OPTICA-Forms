@@ -16,7 +16,7 @@ import switchingForm from "../../Utils/SwitchingForm-Sample-Main";
 import SampleFormFieldsInfo from "../../Utils/SampleFormFieldsInfo";
 
 const FormFieldsInfo =
-  switchingForm.title == "Main" ? MainFormFieldsInfo : SampleFormFieldsInfo;
+  switchingForm.type == "Main" ? MainFormFieldsInfo : SampleFormFieldsInfo;
 
 const FormDataComponent = (validateField, formStyle) => {
   const iconMap = {
@@ -83,7 +83,7 @@ const FormDataComponent = (validateField, formStyle) => {
     <>
       {/* <StyledImage src={eventpic} alt="Jaypee's Got Latent" /> */}
       <StyledTitle>{FormFieldsInfo.headerInfo.heading}</StyledTitle>
-      {switchingForm.title != "Main" ? (
+      {switchingForm.type != "Main" ? (
         <>
           <h3
             style={{

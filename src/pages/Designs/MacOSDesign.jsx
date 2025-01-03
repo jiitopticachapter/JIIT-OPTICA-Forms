@@ -62,6 +62,22 @@ const MacOSDesign = () => {
             </h3>
             <Instructions>
               <TerminalCommand>
+                <EventDetails>
+                  "The Story of Uncommon Decisions" followed by an interaction
+                  with students
+                  <br />
+                  <br />
+                  <HighlightText>Date: </HighlightText> 11th January 2025 <br />
+                  <HighlightText>Time: </HighlightText> 9:30 PM to 12:00 PM{" "}
+                  <br />
+                  <HighlightText>Venue: </HighlightText> Auditorium (JBS)
+                  <br />
+                  <br />
+                  <HighlightText>By: </HighlightText> Padma Shri Prof. H.C.
+                  Verma
+                  <br />
+                </EventDetails>
+                <br />
                 {FormFieldsInfo.instructionInfo.description} <br />
                 <br />
                 {FormFieldsInfo.instructionInfo.instructions.map(
@@ -104,22 +120,44 @@ const MacOSDesign = () => {
                 <MacOSButton type="submit">Submit</MacOSButton>
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <SocialIconsContainer>
-                    <IconWrapper>
+                    {/* <IconWrapper>
                       <FaTwitter />
-                    </IconWrapper>
-                    <IconWrapper>
+                    </IconWrapper> */}
+                    <IconWrapper
+                      href="https://www.linkedin.com/company/jiitopticachapter/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaLinkedin />
                     </IconWrapper>
-                    <IconWrapper>
+                    <IconWrapper
+                      href="https://www.instagram.com/jiitopticachapter?igsh=MWVqeGQ5bmRwMHc5eg=="
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaInstagram />
                     </IconWrapper>
-                    <IconWrapper>
+                    <IconWrapper
+                      href="https://github.com/jiitopticachapter"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaGithub />
                     </IconWrapper>
                   </SocialIconsContainer>
                 </div>
               </div>
             </Form>
+            <br /> <br />
+            <div
+              style={{ textAlign: "center", fontSize: "15px", color: "#888" }}
+            >
+              For any query please contact:
+              <br />
+              <strong>Yash Mittal</strong>: +91 <em>8570940287</em>
+              <br />
+              <strong>Shantanu Pandey</strong>: +91 <em>9026152678</em>
+            </div>
           </Content>
           <Tagdiv2
             style={{
@@ -187,6 +225,21 @@ const SidebarLogo = styled.img`
   @media (min-width: 768px) {
     width: 80%;
   }
+`;
+
+const HighlightText = styled.span`
+  color: #ffffff;
+  font-weight: bold;
+`;
+
+const EventDetails = styled.div`
+  background-color: #222;
+  padding: 10px;
+  border-radius: 5px;
+  // margin-top: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  // text-align: center;
 `;
 
 const LuxButton = styled(Button)`

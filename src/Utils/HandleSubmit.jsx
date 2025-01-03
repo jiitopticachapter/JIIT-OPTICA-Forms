@@ -87,7 +87,7 @@ const HandleSubmit = async (event, validateField) => {
   try {
     if (switchingForm.type === "Main") {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbyng1CgUpRoLGqBcJ3jPiAkYu_NLATUfC8Otv8iDtVv9CJqSuxYHMtWF8yJSk9whC4a8Q/exec",
+        "https://script.google.com/macros/s/AKfycbzbXLCkBmIMHvx8G39Xzt4c_ta80NCmAQDug3OgPCrpE51d8J3OZxv2nhGvJidnOd1z/exec",
         {
           method: "POST",
           headers: {

@@ -20,7 +20,7 @@ import { FiSend } from "react-icons/fi";
 import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import opticaLogo from "./../../assets/optica_logo.png";
 import optica_o from "./../../assets/optica_o.png";
-import whatsapp_bg from "./../../assets/whatsapp_bg.png";
+import whatsapp_bg from "./../../assets/whatsapp_bg.jpeg";
 import FormDataComponent from "./FormFields.jsx";
 import HandleSubmit from "../../Utils/HandleSubmit";
 import useError from "../../Utils/ValidateError";
@@ -127,7 +127,7 @@ const WhatsAppDesign = () => {
         </TopSection>
         <FormContainer
           style={{
-            backgroundImage: `url(${whatsapp_bg})`,
+            backgroundImage: `linear-gradient(rgba(55, 64, 69, 0.7), rgba(55, 64, 69, 0.7)), url(${whatsapp_bg})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",

@@ -4,9 +4,7 @@ const FormFieldsInfo = {
     description: "Read the below instructions carefully:",
     instructions: [
       "Fill out all fields accurately.",
-      "Upload necessary documents.",
-      "Ensure contact information is up-to-date.",
-      "Click Submit to finalize your registration.",
+      "Students from outside JIIT must carry a valid ID card for entry.",
     ],
     checkboxStatus: {
       show: true,
@@ -15,7 +13,7 @@ const FormFieldsInfo = {
     },
   },
   headerInfo: {
-    heading: "JAYPEE'S GOT LATENT",
+    heading: "TALK:  BY PROF. H.C. VERMA",
   },
   footerInfo: {
     contactus: {
@@ -58,9 +56,28 @@ const FormFieldsInfo = {
       regex: "^[0-9]{10}$",
     },
     {
-      heading: "Branch",
-      name: "entry.branch",
+      heading: "College",
+      name: "entry.college",
       required: true,
+      type: "radio",
+      labels: ["JIIT-62", "JIIT-128", "Others"],
+      otherKey: ".other_option_response",
+      errorMsg: "Please select your college.",
+    },
+    {
+      heading:
+        "Enrollment No. (Only for Jaypee Institute of Information Technology Students)",
+      name: "entry.enroll",
+      required: false,
+      type: "text",
+      placeholder: "Enter your enrollment number",
+      errorMsg: "Enrollment number is required.",
+    },
+    {
+      heading:
+        "Branch (Only for Jaypee Institute of Information Technology Students)",
+      name: "entry.branch",
+      required: false,
       type: "radio",
       labels: [
         "Computer Science",
@@ -72,70 +89,11 @@ const FormFieldsInfo = {
         "BCA",
         "BBA",
         "MBA",
+        "BioTech",
         "Others",
       ],
       otherKey: ".other_option_response",
       errorMsg: "Please select your branch.",
-    },
-    {
-      heading: "Batch",
-      name: "entry.batch",
-      required: true,
-      type: "text",
-      placeholder: "Enter your batch",
-      errorMsg: "Batch is required.",
-      // regex: "^[0-9]{10}$",
-    },
-    {
-      heading: "Are you single (relationship status)?",
-      name: "entry.relationship_status",
-      required: true,
-      type: "radio",
-      labels: ["Yes", "No"],
-      otherKey: ".other_option_response",
-      errorMsg: "Above field is required.",
-    },
-    {
-      heading: "Do you have any sibling?",
-      name: "entry.sibling",
-      required: true,
-      type: "radio",
-      labels: ["Yes", "No"],
-      otherKey: ".other_option_response",
-      errorMsg: "Above field is required.",
-    },
-
-    {
-      heading: "What would you do if your gender was reversed for one day?",
-      name: "entry.gender_reveresed",
-      required: true,
-      type: "textarea",
-      placeholder: "write your answer here ...",
-      errorMsg: "Above field is required.",
-    },
-    {
-      heading: "Most daring thing you have done?",
-      name: "entry.daring_thing",
-      required: true,
-      type: "textarea",
-      placeholder: "write your answer here ...",
-      errorMsg: "Above field is required.",
-    },
-    {
-      heading: "Your biggest achievement till date.",
-      name: "entry.biggest_achievement",
-      required: true,
-      type: "textarea",
-      placeholder: "write your answer here ...",
-      errorMsg: "Above field is required.",
-    },
-    {
-      heading: "Goals in your life (apart from academics).",
-      name: "entry.life_goals",
-      required: true,
-      type: "textarea",
-      placeholder: "write your answer here ...",
-      errorMsg: "Above field is required.",
     },
   ],
 };
