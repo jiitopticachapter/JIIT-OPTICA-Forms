@@ -27,6 +27,7 @@ import { Errors } from "../../Utils/ValidateError";
 import FormDataComponent from "./FormFields.jsx";
 import { FormStylesInfo } from "../../Utils/FormFieldsStyleInfo";
 import FormFieldsInfo from "../../Utils/FormFieldsInfo.js";
+import HCVERMA from "./../../assets/HCVERMA.jpeg";
 
 const MacOSDesign = () => {
   const { validateField } = useError();
@@ -49,7 +50,7 @@ const MacOSDesign = () => {
           style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
         >
           <Sidebar>
-            <SidebarLogo src={optica_logo} alt="College Logo" />
+            <SidebarLogo src={HCVERMA} alt="College Logo" />
             <h3
               style={{
                 backgroundColor: "#2c2c2c",
@@ -63,18 +64,16 @@ const MacOSDesign = () => {
             <Instructions>
               <TerminalCommand>
                 <EventDetails>
-                  "The Story of Uncommon Decisions" followed by an interaction
-                  with students
+                  "The Story of Uncommon Decisions" by Prof. H.C. Verma followed
+                  by an interaction with students
                   <br />
                   <br />
                   <HighlightText>Date: </HighlightText> 11th January 2025 <br />
-                  <HighlightText>Time: </HighlightText> 9:30 PM to 12:00 PM{" "}
+                  <HighlightText>Time: </HighlightText> 9:30 AM to 12:00 PM{" "}
                   <br />
-                  <HighlightText>Venue: </HighlightText> Auditorium (JBS)
-                  <br />
-                  <br />
-                  <HighlightText>By: </HighlightText> Padma Shri Prof. H.C.
-                  Verma
+                  <HighlightText>Venue: </HighlightText> Auditorium (JIIT){" "}
+                  {/* <HighlightText>By: </HighlightText> Padma Shri Prof. H.C.
+                  Verma */}
                   <br />
                 </EventDetails>
                 <br />
