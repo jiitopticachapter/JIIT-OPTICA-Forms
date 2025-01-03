@@ -154,7 +154,7 @@ const MacOSDesign = () => {
             >
               For any query please contact:
               <br />
-              <strong>Yash Mittal</strong>: +91 <em>8570940287</em>
+              <strong>Sai Raj Singh</strong>: +91 <em>7439557090</em>
               <br />
               <strong>Shantanu Pandey</strong>: +91 <em>9026152678</em>
             </div>
