@@ -27,7 +27,13 @@ import { Errors } from "../../Utils/ValidateError";
 import FormDataComponent from "./FormFields.jsx";
 import { FormStylesInfo } from "../../Utils/FormFieldsStyleInfo";
 import FormFieldsInfo from "../../Utils/FormFieldsInfo.js";
-import HCVERMA from "./../../assets/HCVERMA.png";
+import HCVERMA from "./../../assets/HCVERMA.jpeg";
+import Loader from "../Loader/Loader.jsx";
+
+let showLoader = false;
+const showLoaderfunction = (value) => {
+  showLoader = value;
+};
 
 const MacOSDesign = () => {
   const { validateField } = useError();
@@ -35,6 +41,7 @@ const MacOSDesign = () => {
     <div
       style={{ padding: "1.5rem 0", minHeight: "100vh", background: "#121212" }}
     >
+      {showLoader && <Loader />}
       <MacOSWindow>
         <MacOSHeader>
           <ControlButton color="#ff5f57" />
@@ -463,3 +470,4 @@ const ThemedTextarea = styled.textarea`
 `;
 
 export default MacOSDesign;
+export { showLoaderfunction };

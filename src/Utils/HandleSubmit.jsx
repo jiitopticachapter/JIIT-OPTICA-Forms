@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import FormFieldsInfo from "./FormFieldsInfo";
 import { Errors } from "./ValidateError";
 import { toast } from "react-hot-toast";
-import { showLoaderfunction } from "../pages/Designs/JaypeeGotLatentDesign";
+import { showLoaderfunction } from "../pages/Designs/MacOSDesign";
 import switchingForm from "./SwitchingForm-Sample-Main";
 
 const HandleSubmit = async (event, validateField) => {
