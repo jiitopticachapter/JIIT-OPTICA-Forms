@@ -395,7 +395,7 @@ const SocialIconsContainer = styled.div`
   align-items: center; /* Center align the icons vertically */
 `;
 
-const IconWrapper = styled.div`
+const IconWrapper = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
