@@ -14,11 +14,18 @@ import { Form } from "react-bootstrap";
 import eventpic from "../../assets/eventpic.jpeg";
 import switchingForm from "../../Utils/SwitchingForm-Sample-Main";
 import SampleFormFieldsInfo from "../../Utils/SampleFormFieldsInfo";
+import { useParams } from "react-router-dom";
 
-const FormFieldsInfo =
+let FormFieldsInfo =
   switchingForm.type == "Main" ? MainFormFieldsInfo : SampleFormFieldsInfo;
 
 const FormDataComponent = (validateField, formStyle) => {
+  const { id } = useParams();
+
+  if (switchingForm.type === "Main" && id) {
+    FormFieldsInfo = MainFormFieldsInfo[id] || {};
+  }
+
   const iconMap = {
     Name: <MdPerson style={{ color: formStyle.icon.color || "#666" }} />,
     Email: <MdEmail style={{ color: formStyle.icon.color || "#666" }} />,

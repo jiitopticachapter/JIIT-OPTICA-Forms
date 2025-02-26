@@ -26,9 +26,14 @@ import useError from "../../Utils/ValidateError";
 import { Errors } from "../../Utils/ValidateError";
 import FormDataComponent from "./FormFields.jsx";
 import { FormStylesInfo } from "../../Utils/FormFieldsStyleInfo";
-import FormFieldsInfo from "../../Utils/FormFieldsInfo.js";
+import MainFormFieldsInfo from "../../Utils/FormFieldsInfo.js";
 import HCVERMA from "./../../assets/HCVERMA.jpeg";
 import Loader from "../Loader/Loader.jsx";
+import switchingForm from "../../Utils/SwitchingForm-Sample-Main.js";
+import { useParams } from "react-router-dom";
+
+let FormFieldsInfo =
+  switchingForm.type == "Main" ? MainFormFieldsInfo : SampleFormFieldsInfo;
 
 let showLoader = false;
 const showLoaderfunction = (value) => {
@@ -37,7 +42,12 @@ const showLoaderfunction = (value) => {
 
 const MacOSDesign = () => {
   const { validateField } = useError();
-  return (
+  const { id } = useParams();
+
+  if (switchingForm.type === "Main" && id) {
+    FormFieldsInfo = MainFormFieldsInfo[id] || {};
+  }
+  return id ? (
     <div
       style={{ padding: "1.5rem 0", minHeight: "100vh", background: "#121212" }}
     >
@@ -80,7 +90,7 @@ const MacOSDesign = () => {
                   <br />
                   <HighlightText>Venue: </HighlightText> Auditorium (JIIT){" "}
                   {/* <HighlightText>By: </HighlightText> Padma Shri Prof. H.C.
-                  Verma */}
+                Verma */}
                   <br />
                 </EventDetails>
                 <br />
@@ -127,8 +137,8 @@ const MacOSDesign = () => {
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <SocialIconsContainer>
                     {/* <IconWrapper>
-                      <FaTwitter />
-                    </IconWrapper> */}
+                    <FaTwitter />
+                  </IconWrapper> */}
                     <IconWrapper
                       href="https://www.linkedin.com/company/jiitopticachapter/"
                       target="_blank"
@@ -182,6 +192,8 @@ const MacOSDesign = () => {
         </div>
       </MacOSWindow>
     </div>
+  ) : (
+    <>Not found</>
   );
 };
 
