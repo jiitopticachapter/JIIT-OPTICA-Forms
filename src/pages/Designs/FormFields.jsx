@@ -9,7 +9,7 @@ import {
   MdRemoveCircleOutline,
 } from "react-icons/md";
 import { Errors } from "../../Utils/ValidateError";
-import MainFormFieldsInfo from "../../Utils/FormFieldsInfo";
+import MainFormFieldsInfo from "../../Utils/FormFieldsInfo.json";
 import { Form } from "react-bootstrap";
 import eventpic from "../../assets/eventpic.jpeg";
 import switchingForm from "../../Utils/SwitchingForm-Sample-Main";

@@ -1,8 +1,12 @@
 name: Update Forms JSON
 
 on:
-  issues:
-    types: [opened]
+  workflow_dispatch:
+    inputs:
+      formData:
+        description: "Form data JSON"
+        required: true
+        type: string
 
 jobs:
   update-json:
@@ -16,16 +20,10 @@ jobs:
         with:
           node-version: "18"
 
-      - name: Read Issue Data
-        id: issue
-        run: |
-          echo '${{ toJson(github.event.issue) }}' > issue.json
-          cat issue.json
-
       - name: Append New Form to FormFieldsInfo.json
         run: |
-          FORM=$(jq '.body | fromjson' issue.json)
-           jq --argjson newForm "$FORM" '. += [$newForm]' src/Utils/FormFieldsInfo.json > tmp.json && mv tmp.json src/Utils/FormFieldsInfo.json
+          echo '${{ inputs.formData }}' > formData.json
+          jq --argjson newForm "$(cat formData.json)" '. += $newForm' src/Utils/FormFieldsInfo.json > tmp.json && mv tmp.json src/Utils/FormFieldsInfo.json
           cat src/Utils/FormFieldsInfo.json
 
       - name: Commit and Push Changes

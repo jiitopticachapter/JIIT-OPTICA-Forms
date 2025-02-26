@@ -26,7 +26,7 @@ import HandleSubmit from "../../Utils/HandleSubmit.jsx";
 import useError from "../../Utils/ValidateError.jsx";
 import { FormStylesInfo } from "../../Utils/FormFieldsStyleInfo.js";
 import Loader from "../Loader/Loader.jsx";
-import FormFieldsInfo from "../../Utils/FormFieldsInfo.js";
+import FormFieldsInfo from "../../Utils/FormFieldsInfo.json";
 import FormDataComponent from "./FormFields.jsx";
 
 let showLoader = false;

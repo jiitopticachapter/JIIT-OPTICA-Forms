@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import Data from "./Data.js";
-import FormFieldsInfo from "./FormFieldsInfo";
+import FormFieldsInfo from "./FormFieldsInfo.json";
 import { Errors } from "./ValidateError";
 import { toast } from "react-hot-toast";
 import { showLoaderfunction } from "../pages/Designs/MacOSDesign";

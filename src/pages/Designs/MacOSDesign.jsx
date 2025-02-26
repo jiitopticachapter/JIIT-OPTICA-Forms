@@ -26,7 +26,7 @@ import useError from "../../Utils/ValidateError";
 import { Errors } from "../../Utils/ValidateError";
 import FormDataComponent from "./FormFields.jsx";
 import { FormStylesInfo } from "../../Utils/FormFieldsStyleInfo";
-import MainFormFieldsInfo from "../../Utils/FormFieldsInfo.js";
+import MainFormFieldsInfo from "../../Utils/FormFieldsInfo.json";
 import HCVERMA from "./../../assets/HCVERMA.jpeg";
 import Loader from "../Loader/Loader.jsx";
 import switchingForm from "../../Utils/SwitchingForm-Sample-Main.js";
