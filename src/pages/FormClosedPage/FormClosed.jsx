@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
-import "./DeadLinePage.css";
+import "./FormClosed.css";
 import optica_logo from "../../assets/optica_logo.png";
 import { useNavigate } from "react-router-dom";
-import switchingForm from "../../Utils/SwitchingForm-Sample-Main";
+import switchingForm from "../../utils/FormType";
 // import Stars from "../../components/Background/Starsbg";
 
-const DeadLine = () => {
+const FormClosed = () => {
   const navigate = useNavigate();
 
   const handleBackToHome = () => {
@@ -49,7 +49,6 @@ const DeadLine = () => {
               Sorry, the deadline for form submission has been reached.
               <br />
               Thank you for your interest!
-              
             </p>
           </div>
         </Container>
@@ -58,4 +57,4 @@ const DeadLine = () => {
   );
 };
 
-export default DeadLine;
+export default FormClosed;

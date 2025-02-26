@@ -3,7 +3,7 @@ import { Container, Button } from "react-bootstrap";
 import "./ConfirmPage.css";
 import optica_logo from "../../assets/optica_logo.png";
 import { useNavigate } from "react-router-dom";
-import switchingForm from "../../Utils/SwitchingForm-Sample-Main";
+import switchingForm from "../../utils/FormType";
 // import Stars from "../../components/Background/Starsbg";
 
 const ConfirmPage = () => {

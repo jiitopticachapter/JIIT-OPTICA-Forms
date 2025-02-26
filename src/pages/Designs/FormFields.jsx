@@ -8,16 +8,18 @@ import {
   MdList,
   MdRemoveCircleOutline,
 } from "react-icons/md";
-import { Errors } from "../../Utils/ValidateError";
-import MainFormFieldsInfo from "../../Utils/FormFieldsInfo.json";
+import { Errors } from "../../Utils/ValidateError.js";
+import MainFormFieldsInfo from "../../data/FormFieldsInfo.json";
 import { Form } from "react-bootstrap";
 import eventpic from "../../assets/eventpic.jpeg";
-import switchingForm from "../../Utils/SwitchingForm-Sample-Main";
-import SampleFormFieldsInfo from "../../Utils/SampleFormFieldsInfo";
+import switchingForm from "../../utils/FormType.js";
+import SampleFormFieldsInfo from "../../data/SampleFormFieldsInfo.json";
 import { useParams } from "react-router-dom";
 
 let FormFieldsInfo =
-  switchingForm.type == "Main" ? MainFormFieldsInfo : SampleFormFieldsInfo;
+  switchingForm.type == "Main"
+    ? MainFormFieldsInfo
+    : SampleFormFieldsInfo["id"];
 
 const FormDataComponent = (validateField, formStyle) => {
   const { id } = useParams();

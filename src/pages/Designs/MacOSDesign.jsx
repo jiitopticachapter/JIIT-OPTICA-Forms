@@ -21,33 +21,24 @@ import {
 } from "react-icons/md";
 import optica_logo from "./../../assets/optica_logo.png";
 import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
-import HandleSubmit from "../../Utils/HandleSubmit";
-import useError from "../../Utils/ValidateError";
-import { Errors } from "../../Utils/ValidateError";
+import HandleSubmit from "../../utils/HandleSubmit.js";
+import useError from "../../utils/ValidateError.js";
+import { Errors } from "../../utils/ValidateError.js";
 import FormDataComponent from "./FormFields.jsx";
-import { FormStylesInfo } from "../../Utils/FormFieldsStyleInfo";
-import MainFormFieldsInfo from "../../Utils/FormFieldsInfo.json";
+import { FormStylesInfo } from "../../utils/FormFieldsStyleInfo.js";
 import HCVERMA from "./../../assets/HCVERMA.jpeg";
 import Loader from "../Loader/Loader.jsx";
-import switchingForm from "../../Utils/SwitchingForm-Sample-Main.js";
-import { useParams } from "react-router-dom";
-
-let FormFieldsInfo =
-  switchingForm.type == "Main" ? MainFormFieldsInfo : SampleFormFieldsInfo;
+import switchingForm from "../../utils/FormType.js";
 
 let showLoader = false;
 const showLoaderfunction = (value) => {
   showLoader = value;
 };
 
-const MacOSDesign = () => {
+const MacOSDesign = ({ FormFieldsInfo }) => {
   const { validateField } = useError();
-  const { id } = useParams();
 
-  if (switchingForm.type === "Main" && id) {
-    FormFieldsInfo = MainFormFieldsInfo[id] || {};
-  }
-  return id ? (
+  return (
     <div
       style={{ padding: "1.5rem 0", minHeight: "100vh", background: "#121212" }}
     >
@@ -76,7 +67,7 @@ const MacOSDesign = () => {
                 textAlign: "center",
               }}
             >
-              {FormFieldsInfo.instructionInfo.heading}
+              {FormFieldsInfo?.instructionInfo?.heading}
             </h3>
             <Instructions>
               <TerminalCommand>
@@ -94,9 +85,9 @@ const MacOSDesign = () => {
                   <br />
                 </EventDetails>
                 <br />
-                {FormFieldsInfo.instructionInfo.description} <br />
+                {FormFieldsInfo?.instructionInfo?.description} <br />
                 <br />
-                {FormFieldsInfo.instructionInfo.instructions.map(
+                {FormFieldsInfo?.instructionInfo?.instructions.map(
                   (instruction, index) => (
                     <div key={index}>
                       <span style={{ color: "#aaaaaa" }}>
@@ -192,8 +183,6 @@ const MacOSDesign = () => {
         </div>
       </MacOSWindow>
     </div>
-  ) : (
-    <>Not found</>
   );
 };
 

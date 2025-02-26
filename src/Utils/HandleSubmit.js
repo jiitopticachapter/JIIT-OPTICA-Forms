@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 // import Data from "./Data.js";
-import FormFieldsInfo from "./FormFieldsInfo.json";
+import FormFieldsInfo from "./../data/FormFieldsInfo.json";
 import { Errors } from "./ValidateError";
 import { toast } from "react-hot-toast";
 import { showLoaderfunction } from "../pages/Designs/MacOSDesign";
-import switchingForm from "./SwitchingForm-Sample-Main";
+import switchingForm from "./FormType";
 
 const HandleSubmit = async (event, validateField) => {
   event.preventDefault();
