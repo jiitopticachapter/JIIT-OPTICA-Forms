@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import ConfirmPage from "./pages/ConfirmPage/ConfirmPage.jsx";
+import DeadLine from "./pages/DeadLinePage/DeadLinePage.jsx";
 import JaypeeGotLatent from "./pages/Designs/JaypeeGotLatentDesign.jsx";
 import { Toaster } from "react-hot-toast";
 import MacOSDesign from "./pages/Designs/MacOSDesign.jsx";
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/" element={<>JIIT OPTICA CHAPTER</>} />
         <Route path="/:id" element={<MacOSDesign />} />
         <Route path="/form-submitted" element={<ConfirmPage />} />
+        <Route path="/deadline-passed" element={<DeadLine/>}/>
       </Routes>
 
       <Toaster />
