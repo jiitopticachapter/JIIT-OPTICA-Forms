@@ -6,7 +6,7 @@ import { toast } from "react-hot-toast";
 import { showLoaderfunction } from "../pages/Designs/MacOSDesign";
 import switchingForm from "./FormType";
 
-const HandleSubmit = async (event, validateField) => {
+const HandleSubmit = async (event, validateField, id) => {
   event.preventDefault();
   console.log("handle submit");
 
@@ -16,9 +16,10 @@ const HandleSubmit = async (event, validateField) => {
   const formData = new FormData(event.target);
   let data = {};
   let formIsValid = true;
+  console.log("checking... ", FormFieldsInfo);
 
   {
-    FormFieldsInfo.formInfo.map((field, index) => {
+    FormFieldsInfo[id]?.formInfo?.map((field, index) => {
       let value = null;
 
       let isFile = null;
@@ -80,31 +81,36 @@ const HandleSubmit = async (event, validateField) => {
     return;
   }
 
+  data = {
+    ...data,
+    sheetNo: FormFieldsInfo[id]?.sheetNo,
+    eventName: FormFieldsInfo[id]?.headerInfo?.heading,
+    eventDate: FormFieldsInfo[id]?.deadline?.time,
+    eventId: id,
+  };
+
   console.log("data is: ", data);
   // return;
   showLoaderfunction(true);
 
   try {
     if (switchingForm.type === "Main") {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzbXLCkBmIMHvx8G39Xzt4c_ta80NCmAQDug3OgPCrpE51d8J3OZxv2nhGvJidnOd1z/exec",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-          mode: "no-cors",
-        }
-      );
+      const response = await fetch(`${import.meta.env.VITE_APP_SCRIPT_URI}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+        mode: "no-cors",
+      });
     }
 
     // console.log(response);
 
-    // const result = await response;
-    // console.log("result is: ", result);
+    const result = await response;
+    console.log("result is: ", result);
     // if (result.status === "success") {
-    window.location.href = "/form-submitted"; // Redirect on success
+    // window.location.href = "/form-submitted"; // Redirect on success
     // } else {
     //   alert("Error submitting form. Please check all fields.");
     // }

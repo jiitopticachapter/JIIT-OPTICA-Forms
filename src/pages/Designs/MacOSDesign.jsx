@@ -28,7 +28,9 @@ import FormDataComponent from "./FormFields.jsx";
 import { FormStylesInfo } from "../../utils/FormFieldsStyleInfo.js";
 import HCVERMA from "./../../assets/HCVERMA.jpeg";
 import Loader from "../Loader/Loader.jsx";
+import Footer from "../../Components/Sections/Footer.jsx";
 import switchingForm from "../../utils/FormType.js";
+import { useParams } from "react-router-dom";
 
 let showLoader = false;
 const showLoaderfunction = (value) => {
@@ -37,6 +39,7 @@ const showLoaderfunction = (value) => {
 
 const MacOSDesign = ({ FormFieldsInfo }) => {
   const { validateField } = useError();
+  const { id } = useParams();
 
   return (
     <div
@@ -58,7 +61,7 @@ const MacOSDesign = ({ FormFieldsInfo }) => {
           style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
         >
           <Sidebar>
-            <SidebarLogo src={HCVERMA} alt="College Logo" />
+            <SidebarLogo src={optica_logo} alt="College Logo" />
             <h3
               style={{
                 backgroundColor: "#2c2c2c",
@@ -71,7 +74,7 @@ const MacOSDesign = ({ FormFieldsInfo }) => {
             </h3>
             <Instructions>
               <TerminalCommand>
-                <EventDetails>
+                {/* <EventDetails>
                   "The Story of Uncommon Decisions" by Prof. H.C. Verma followed
                   by an interaction with students
                   <br />
@@ -80,10 +83,8 @@ const MacOSDesign = ({ FormFieldsInfo }) => {
                   <HighlightText>Time: </HighlightText> 9:30 AM to 12:00 PM{" "}
                   <br />
                   <HighlightText>Venue: </HighlightText> Auditorium (JIIT){" "}
-                  {/* <HighlightText>By: </HighlightText> Padma Shri Prof. H.C.
-                Verma */}
                   <br />
-                </EventDetails>
+                </EventDetails> */}
                 <br />
                 {FormFieldsInfo?.instructionInfo?.description} <br />
                 <br />
@@ -118,7 +119,7 @@ const MacOSDesign = ({ FormFieldsInfo }) => {
             </Tagdiv>
           </Sidebar>
           <Content>
-            <Form onSubmit={(event) => HandleSubmit(event, validateField)}>
+            <Form onSubmit={(event) => HandleSubmit(event, validateField, id)}>
               {FormDataComponent(validateField, FormStylesInfo.MacOSForm)}
               <div
                 className="text-center mt-5"
@@ -156,15 +157,7 @@ const MacOSDesign = ({ FormFieldsInfo }) => {
               </div>
             </Form>
             <br /> <br />
-            <div
-              style={{ textAlign: "center", fontSize: "15px", color: "#888" }}
-            >
-              For any query please contact:
-              <br />
-              <strong>Sai Raj Singh</strong>: +91 <em>7439557090</em>
-              <br />
-              <strong>Shantanu Pandey</strong>: +91 <em>9026152678</em>
-            </div>
+            <Footer />
           </Content>
           <Tagdiv2
             style={{

@@ -124,6 +124,9 @@
         "errorMsg": "Please upload the file.",
         "allowedFileTypes": ["image/png", "image/jpeg", "application/pdf"]
       }
-    ]
+    ],
+    "deadline": {
+      "time": "2025-03-14T01:00"
+    }
   }
 }

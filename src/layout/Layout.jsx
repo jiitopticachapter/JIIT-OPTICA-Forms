@@ -22,6 +22,19 @@ const Layout = () => {
     return <h1>404 - Not Found</h1>;
   }
 
+  let curr_time = MainFormFieldsInfo[id]?.deadline?.time;
+  const deadlineDate = new Date(curr_time);
+  const currentDate = new Date();
+  // console.log("curr date: ", currentDate, " prev date: ", deadlineDate);
+
+  if (currentDate > deadlineDate) {
+    return (
+      <h1 className="text-center text-3xl font-bold text-red-500 mt-10">
+        Forms Closed
+      </h1>
+    );
+  }
+
   return (
     <>
       <MacOSDesign FormFieldsInfo={FormFieldsInfo} />
