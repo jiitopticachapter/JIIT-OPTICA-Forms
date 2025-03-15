@@ -28,7 +28,7 @@ import FormDataComponent from "./FormFields.jsx";
 import { FormStylesInfo } from "../../utils/FormFieldsStyleInfo.js";
 import HCVERMA from "./../../assets/HCVERMA.jpeg";
 import Loader from "../Loader/Loader.jsx";
-import Footer from "../../Components/Sections/Footer.jsx";
+import Footer from "../../components/Sections/Footer.jsx";
 import { useParams } from "react-router-dom";
 
 let showLoader = false;
