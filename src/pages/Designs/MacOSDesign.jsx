@@ -29,7 +29,6 @@ import { FormStylesInfo } from "../../utils/FormFieldsStyleInfo.js";
 import HCVERMA from "./../../assets/HCVERMA.jpeg";
 import Loader from "../Loader/Loader.jsx";
 import Footer from "../../Components/Sections/Footer.jsx";
-import switchingForm from "../../utils/FormType.js";
 import { useParams } from "react-router-dom";
 
 let showLoader = false;
