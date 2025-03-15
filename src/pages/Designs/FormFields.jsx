@@ -91,7 +91,7 @@ const FormDataComponent = (validateField, formStyle) => {
   return (
     <>
       {/* <StyledImage src={eventpic} alt="Jaypee's Got Latent" /> */}
-      <StyledTitle>{FormFieldsInfo.headerInfo.heading}</StyledTitle>
+      <StyledTitle>{FormFieldsInfo?.headerInfo?.heading}</StyledTitle>
       {switchingForm.type != "Main" ? (
         <>
           <h3
@@ -112,7 +112,7 @@ const FormDataComponent = (validateField, formStyle) => {
       )}
       <h2></h2>
       {/* <RequiredNote>Fields marked with an asterisk are required.</RequiredNote> */}
-      {FormFieldsInfo.formInfo.map((field, index) => {
+      {FormFieldsInfo?.formInfo?.map((field, index) => {
         if (field.type === "text" || field.type === "email") {
           return (
             <Form.Group key={index}>
