@@ -25,10 +25,15 @@ jobs:
 
       - name: Update FormFieldsInfo.json
         run: |
+          # Save the input formData as formData.json
           echo '${{ inputs.formData }}' > formData.json
 
-          # Load the existing FormFieldsInfo.json
-          existingJson=$(cat src/data/FormFieldsInfo.json)
+          # Load the existing FormFieldsInfo.json (if file is empty, use {} as default)
+          if [ -s src/data/FormFieldsInfo.json ]; then
+            existingJson=$(cat src/data/FormFieldsInfo.json)
+          else
+            existingJson="{}"
+          fi
 
           # Load the new form data
           newFormData=$(cat formData.json)
@@ -36,17 +41,21 @@ jobs:
           # Get the id from the new form data (assuming the id is the first key in the object)
           formId=$(echo "$newFormData" | jq -r 'keys[0]')
 
-          # Check if the id exists in the existing JSON and update or append
-          if echo "$existingJson" | jq -e "has($formId)" > /dev/null; then
-            # If the ID exists, update the corresponding object
-            updatedJson=$(echo "$existingJson" | jq --argjson newForm "$newFormData" ". + $newForm")
+          echo "Form ID: $formId"
+
+          # Check if the id exists in the existing JSON and update or append properly
+          if echo "$existingJson" | jq -e --arg formId "$formId" 'has($formId)' > /dev/null; then
+            echo "Form ID exists. Updating entry."
+            # Replace the existing entry
+            updatedJson=$(jq -s ".[0] * .[1]" <(echo "$existingJson") <(echo "$newFormData"))
           else
-            # If the ID doesn't exist, append the new object
-            updatedJson=$(echo "$existingJson" | jq --argjson newForm "$newFormData" ". + $newForm")
+            echo "Form ID does not exist. Adding new entry."
+            # Add new entry to existing JSON
+            updatedJson=$(jq -s ".[0] + .[1]" <(echo "$existingJson") <(echo "$newFormData"))
           fi
 
-          # Save the updated JSON back to FormFieldsInfo.json
-          echo "$updatedJson" > src/data/FormFieldsInfo.json
+          # Save the updated JSON back to FormFieldsInfo.json (formatted)
+          echo "$updatedJson" | jq '.' > src/data/FormFieldsInfo.json
 
           # Display the updated JSON for verification
           cat src/data/FormFieldsInfo.json
@@ -56,7 +65,7 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
           git add src/data/FormFieldsInfo.json
-          git commit -m "Updated FormFieldsInfo.json with new or updated submission"
+          git commit -m "Updated FormFieldsInfo.json with new or updated submission" || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
