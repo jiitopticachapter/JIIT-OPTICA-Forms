@@ -62,7 +62,11 @@
         "name": "entry.college",
         "required": true,
         "type": "radio",
-        "labels": ["JIIT-62", "JIIT-128", "Others"],
+        "labels": [
+          "JIIT-62",
+          "JIIT-128",
+          "Others"
+        ],
         "otherKey": ".other_option_response",
         "errorMsg": "Please select your college."
       },
@@ -127,5 +131,61 @@
     "deadline": {
       "time": "2025-03-14T01:00"
     }
+  },
+  "1742205168472": {
+    "SheetNo": "",
+    "instructionInfo": {
+      "heading": "Instructions",
+      "description": "Read the below instructions carefully:",
+      "instructions": [
+        "hello",
+        "bhbjk"
+      ]
+    },
+    "headerInfo": {
+      "heading": "cse event"
+    },
+    "footerInfo": {
+      "contactus": {
+        "heading": "For any query please contact:",
+        "person1": {
+          "name": "yash",
+          "Phno": ""
+        },
+        "person2": {
+          "name": "",
+          "Phno": ""
+        }
+      }
+    },
+    "formInfo": [
+      {
+        "heading": "",
+        "type": "dropdown",
+        "required": true,
+        "name": "",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [
+          "entry.raju_"
+        ],
+        "dropdownConfig": [
+          {
+            "key": "raju ",
+            "options": [
+              "py"
+            ]
+          }
+        ],
+        "allowedFileTypes": []
+      }
+    ],
+    "deadline": {
+      "time": "2025-03-17T15:16"
+    },
+    "sheetNo": 1
   }
 }
