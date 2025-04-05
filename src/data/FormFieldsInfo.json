@@ -62,7 +62,11 @@
         "name": "entry.college",
         "required": true,
         "type": "radio",
-        "labels": ["JIIT-62", "JIIT-128", "Others"],
+        "labels": [
+          "JIIT-62",
+          "JIIT-128",
+          "Others"
+        ],
         "otherKey": ".other_option_response",
         "errorMsg": "Please select your college."
       },
@@ -98,6 +102,51 @@
     ],
     "deadline": {
       "time": "2026-03-19T01:00"
+    }
+  },
+  "1743855581295": {
+    "sheetNo": 2,
+    "instructionInfo": {
+      "heading": "Instructions",
+      "description": "Read the below instructions carefully:",
+      "instructions": [
+        "testing inst"
+      ]
+    },
+    "headerInfo": {
+      "heading": "testing"
+    },
+    "footerInfo": {
+      "contactus": {
+        "heading": "For any query please contact:",
+        "person1": {
+          "name": "",
+          "Phno": ""
+        },
+        "person2": {
+          "name": "",
+          "Phno": ""
+        }
+      }
+    },
+    "formInfo": [
+      {
+        "heading": "Name",
+        "type": "text",
+        "required": true,
+        "name": "entry.Name",
+        "placeholder": "write your name",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      }
+    ],
+    "deadline": {
+      "time": "2025-04-24T21:49"
     }
   }
 }
