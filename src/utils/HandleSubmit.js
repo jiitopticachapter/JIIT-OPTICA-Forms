@@ -107,10 +107,10 @@ const HandleSubmit = async (event, validateField, id) => {
 
     // console.log(response);
 
-    const result = await response;
-    console.log("result is: ", result);
+    // const result = await response;
+    // console.log("result is: ", result);
     // if (result.status === "success") {
-    // window.location.href = "/form-submitted"; // Redirect on success
+    window.location.href = "/form-submitted"; // Redirect on success
     // } else {
     //   alert("Error submitting form. Please check all fields.");
     // }

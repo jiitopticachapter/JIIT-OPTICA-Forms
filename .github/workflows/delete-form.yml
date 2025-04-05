@@ -1,0 +1,48 @@
+name: Delete Form Entry
+
+on:
+  workflow_dispatch:
+    inputs:
+      formId:
+        description: "Form ID to delete"
+        required: true
+        type: string
+
+jobs:
+  delete-form:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Delete Form Entry from JSON
+        run: |
+          file="src/data/FormFieldsInfo.json"
+
+          if [ -f "$file" ]; then
+            if [ -s "$file" ]; then
+              updatedJson=$(jq "del(.\"${{ inputs.formId }}\")" "$file")
+              echo "$updatedJson" | jq '.' > "$file"
+              echo "Deleted form with ID: ${{ inputs.formId }}"
+              cat "$file"
+            else
+              echo "{}" > "$file"
+              echo "File was empty. Created empty JSON object."
+            fi
+          else
+            echo "File not found: $file"
+            exit 1
+          fi
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add src/data/FormFieldsInfo.json
+          git commit -m "Deleted form with ID: ${{ inputs.formId }}" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
