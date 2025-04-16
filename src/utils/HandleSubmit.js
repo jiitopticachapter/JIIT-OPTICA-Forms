@@ -3,10 +3,15 @@ import React, { useState } from "react";
 import FormFieldsInfo from "./../data/FormFieldsInfo.json";
 import { Errors } from "./ValidateError";
 import { toast } from "react-hot-toast";
-import { showLoaderfunction } from "../pages/Designs/MacOSDesign";
 import switchingForm from "./FormType";
 
-const HandleSubmit = async (event, validateField, id) => {
+const HandleSubmit = async (
+  event,
+  validateField,
+  id,
+  setFormStatus,
+  setLoader
+) => {
   event.preventDefault();
   console.log("handle submit");
 
@@ -91,7 +96,7 @@ const HandleSubmit = async (event, validateField, id) => {
 
   console.log("data is: ", data);
   // return;
-  showLoaderfunction(true);
+  setLoader(true);
 
   try {
     if (switchingForm.type === "Main") {
@@ -110,16 +115,18 @@ const HandleSubmit = async (event, validateField, id) => {
     // const result = await response;
     // console.log("result is: ", result);
     // if (result.status === "success") {
-    window.location.href = "/form-submitted"; // Redirect on success
+    // window.location.href = "/form-submitted"; // Redirect on success
     // } else {
     //   alert("Error submitting form. Please check all fields.");
     // }
+    setFormStatus(false);
+    console.log("Form submitted successfully!");
   } catch (error) {
     console.error("Error submitting form", error);
     alert("There is an issue while submitting the form. Please try again.");
   } finally {
     // setLoading(false);
-    showLoaderfunction(false);
+    setLoader(false);
   }
 };
 

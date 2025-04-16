@@ -14,8 +14,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/:id" element={<Layout />} />
-        <Route path="/form-submitted" element={<ConfirmPage />} />
-        <Route path="/deadline-passed" element={<FormClosed />} />
+        {/* <Route path="/form-submitted" element={<ConfirmPage />} /> */}
+        {/* <Route path="/deadline-passed" element={<FormClosed />} /> */}
       </Routes>
 
       <Toaster />

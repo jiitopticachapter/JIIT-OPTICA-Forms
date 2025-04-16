@@ -30,21 +30,19 @@ import HCVERMA from "./../../assets/HCVERMA.jpeg";
 import Loader from "../Loader/Loader.jsx";
 import Footer from "../../components/Sections/Footer.jsx";
 import { useParams } from "react-router-dom";
-
-let showLoader = false;
-const showLoaderfunction = (value) => {
-  showLoader = value;
-};
+import { useFormContext } from "../../utils/FormContext.jsx";
 
 const MacOSDesign = ({ FormFieldsInfo }) => {
   const { validateField } = useError();
   const { id } = useParams();
 
+  const { loader, setFormStatus, setLoader } = useFormContext();
+
   return (
     <div
       style={{ padding: "1.5rem 0", minHeight: "100vh", background: "#121212" }}
     >
-      {showLoader && <Loader />}
+      {loader && <Loader />}
       <MacOSWindow>
         <MacOSHeader>
           <ControlButton color="#ff5f57" />
@@ -118,7 +116,11 @@ const MacOSDesign = ({ FormFieldsInfo }) => {
             </Tagdiv>
           </Sidebar>
           <Content>
-            <Form onSubmit={(event) => HandleSubmit(event, validateField, id)}>
+            <Form
+              onSubmit={(event) =>
+                HandleSubmit(event, validateField, id, setFormStatus, setLoader)
+              }
+            >
               {FormDataComponent(validateField, FormStylesInfo.MacOSForm)}
               <div
                 className="text-center mt-5"
@@ -463,4 +465,3 @@ const ThemedTextarea = styled.textarea`
 `;
 
 export default MacOSDesign;
-export { showLoaderfunction };

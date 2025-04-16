@@ -43,12 +43,13 @@ const FormClosed = () => {
             ) : (
               ""
             )}
-            <h1 className="deadline-title">Form DeadLine Reached!</h1>
+            <h1 className="deadline-title">Form Closed!</h1>
 
             <p className="deadline-message">
-              Sorry, the deadline for form submission has been reached.
+              This form is no longer accepting responses.
               <br />
-              Thank you for your interest!
+              Please try reaching out to the event administrator or organizing
+              team for assistance.
             </p>
           </div>
         </Container>

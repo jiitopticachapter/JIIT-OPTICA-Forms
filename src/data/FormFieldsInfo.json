@@ -62,11 +62,7 @@
         "name": "entry.college",
         "required": true,
         "type": "radio",
-        "labels": [
-          "JIIT-62",
-          "JIIT-128",
-          "Others"
-        ],
+        "labels": ["JIIT-62", "JIIT-128", "Others"],
         "otherKey": ".other_option_response",
         "errorMsg": "Please select your college."
       },
@@ -187,7 +183,7 @@
       }
     ],
     "deadline": {
-      "time": "2025-04-16T16:31"
+      "time": "2025-04-17T16:31"
     }
   }
 }

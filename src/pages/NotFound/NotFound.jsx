@@ -4,7 +4,7 @@ import "./../ConfirmPage/ConfirmPage.css";
 import optica_logo from "../../assets/optica_logo.png";
 import switchingForm from "../../utils/FormType.js";
 
-const LandingPage = () => {
+const NotFound = () => {
   return (
     <div style={{ backgroundColor: "black" }}>
       {/* <Stars speed={0.02} /> */}
@@ -35,25 +35,13 @@ const LandingPage = () => {
             ) : (
               ""
             )}
-            <h1 className="confirm-title"> @jiit-optica forms</h1>
+            <h1 className="confirm-title"> 404 - Page not found</h1>
 
             <p className="confirm-message">
-              Official forms of Optica JIIT Student Chapter.
               <br />
-              Please access a valid form link to proceed.
+              Sorry, we couldn't find the page you were looking for.
               {/* We look forward to seeing you on
               November 9th at Jaypee's Got Latent. */}
-            </p>
-            <p
-              className="footer-note"
-              style={{
-                fontSize: "0.85rem",
-                color: "rgba(255, 255, 255, 0.5)",
-                marginTop: "1rem",
-                textAlign: "center",
-              }}
-            >
-              If you were expecting a form, please contact the event organizer.
             </p>
           </div>
         </Container>
@@ -62,4 +50,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default NotFound;
