@@ -62,7 +62,11 @@
         "name": "entry.college",
         "required": true,
         "type": "radio",
-        "labels": ["JIIT-62", "JIIT-128", "Others"],
+        "labels": [
+          "JIIT-62",
+          "JIIT-128",
+          "Others"
+        ],
         "otherKey": ".other_option_response",
         "errorMsg": "Please select your college."
       },
@@ -184,6 +188,259 @@
     ],
     "deadline": {
       "time": "2025-04-17T16:31"
+    }
+  },
+  "tcu2bh3gd0lcf214": {
+    "sheetNo": 4,
+    "instructionInfo": {
+      "heading": "Instructions",
+      "description": "Read the below instructions carefully:",
+      "instructions": []
+    },
+    "headerInfo": {
+      "heading": "Astrovolt - ECE EVENT"
+    },
+    "footerInfo": {
+      "contactus": {
+        "heading": "For any query please contact:",
+        "person1": {
+          "name": "Yash",
+          "Phno": "8570940287"
+        },
+        "person2": {
+          "name": "",
+          "Phno": ""
+        }
+      }
+    },
+    "formInfo": [
+      {
+        "heading": "Team Name",
+        "type": "text",
+        "required": true,
+        "name": "entry.Team_Name",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Name of Member 1",
+        "type": "text",
+        "required": true,
+        "name": "entry.Name_of_Member_1",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Enrollment of Member 1",
+        "type": "text",
+        "required": true,
+        "name": "entry.Enrollment_of_Member_1",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Email Of Member 1",
+        "type": "email",
+        "required": true,
+        "name": "entry.Email_Of_Member_1",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Branch",
+        "type": "text",
+        "required": true,
+        "name": "entry.Branch",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Batch",
+        "type": "text",
+        "required": true,
+        "name": "entry.Batch",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Name of Member 2",
+        "type": "text",
+        "required": true,
+        "name": "entry.Name_of_Member_2",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Enrollment of Member 2",
+        "type": "text",
+        "required": true,
+        "name": "entry.Enrollment_of_Member_2",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Email of Member 2",
+        "type": "email",
+        "required": true,
+        "name": "entry.Email_of_Member_2",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Branch",
+        "type": "text",
+        "required": true,
+        "name": "entry.Branch",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Batch",
+        "type": "text",
+        "required": true,
+        "name": "entry.Batch",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Name of Member 3",
+        "type": "text",
+        "required": true,
+        "name": "entry.Name_of_Member_3",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Enrollment of Member 3",
+        "type": "text",
+        "required": true,
+        "name": "entry.Enrollment_of_Member_3",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Email of Member 3",
+        "type": "email",
+        "required": true,
+        "name": "entry.Email_of_Member_3",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Branch",
+        "type": "text",
+        "required": true,
+        "name": "entry.Branch",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Batch",
+        "type": "text",
+        "required": true,
+        "name": "entry.Batch",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      }
+    ],
+    "deadline": {
+      "time": ""
     }
   }
 }
