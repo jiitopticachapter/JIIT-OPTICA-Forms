@@ -876,31 +876,135 @@
     "instructionInfo": {
       "heading": "Instructions",
       "description": "Read the below instructions carefully:",
-      "instructions": []
+      "instructions": [
+        "All participants must be present before the competition starts. 4th May,2025 ,OAT , 10:00 AM",
+        "Participants must maintain discipline and follow all instructions given by the volunteers or organizing team during the event.",
+        "QR codes must not be destroyed",
+        "Each participant must bring their own mobile phone for the first round.",
+        "Participants must stay within the given locations.  (Specifically, you are allowed only on the Ground Floor of AAB1 (Academic Building 1). Do not go upstairs.)"
+      ]
     },
     "headerInfo": {
-      "heading": "Optisus"
+      "heading": "Optisus X Stars Wars"
     },
     "footerInfo": {
       "contactus": {
         "heading": "For any query please contact:",
         "person1": {
-          "name": "Yash Mittal",
-          "Phno": "8570940287"
+          "name": "Aryan Goyal",
+          "Phno": "9928590499"
         },
         "person2": {
-          "name": "",
-          "Phno": ""
+          "name": "Bhavishy",
+          "Phno": "9610363350"
         }
       }
     },
     "formInfo": [
       {
-        "heading": "Name",
+        "heading": "Team Name",
         "type": "text",
         "required": true,
-        "name": "entry.Name",
-        "placeholder": "",
+        "name": "entry.Team_Name",
+        "placeholder": "Enter your team name",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Team Leader Name",
+        "type": "text",
+        "required": true,
+        "name": "entry.Team_Leader_Name",
+        "placeholder": "Enter your name",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Leader Enrollment No.",
+        "type": "text",
+        "required": true,
+        "name": "entry.Leader_Enrollment_No.",
+        "placeholder": "Enter your enrollment no.",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Leader Email",
+        "type": "email",
+        "required": true,
+        "name": "entry.Leader_Email",
+        "placeholder": "Enter your email",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Phone No",
+        "type": "text",
+        "required": true,
+        "name": "entry.Phone_No",
+        "placeholder": "Enter your Phone no",
+        "errorMsg": "",
+        "regex": "^[0-9]10$",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Member 1 Name",
+        "type": "text",
+        "required": true,
+        "name": "entry.Member_1_Name",
+        "placeholder": "Enter your name",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Member 2 Name",
+        "type": "text",
+        "required": true,
+        "name": "entry.Member_2_Name",
+        "placeholder": "Enter your name",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Member 3 Nmae",
+        "type": "text",
+        "required": true,
+        "name": "entry.Member_3_Nmae",
+        "placeholder": "Enter your name",
         "errorMsg": "",
         "regex": "",
         "labels": [],
