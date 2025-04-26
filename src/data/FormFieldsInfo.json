@@ -851,9 +851,24 @@
         }
       }
     },
-    "formInfo": [],
+    "formInfo": [
+      {
+        "heading": "Name",
+        "type": "text",
+        "required": true,
+        "name": "entry.Name",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      }
+    ],
     "deadline": {
-      "time": "2025-05-04T12:00"
+      "time": "2025-05-05T12:00"
     }
   }
 }
