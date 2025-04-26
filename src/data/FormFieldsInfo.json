@@ -408,8 +408,7 @@
       "instructions": [
         "The mock interviews will be conducted on 3rd May, from 2:00 PM to 3:30 PM.",
         "You must upload your resume in a Google Drive link (ensure the link is open for all to view).",
-        "If selected, you will receive a confirmation mail in the coming days.",
-        "The interviews will be conducted by college alumni currently working in the tech industry, including professionals from top companies like Microsoft, Swiggy, Zopsmart, Accenture, Myntra, and more."
+        "If selected, you will receive a confirmation mail in the coming days."
       ]
     },
     "headerInfo": {
@@ -458,14 +457,19 @@
         "allowedFileTypes": []
       },
       {
-        "heading": "Current Semester",
-        "type": "text",
+        "heading": "Current Year",
+        "type": "radio",
         "required": true,
-        "name": "entry.Current_Semester",
+        "name": "entry.Current_Year",
         "placeholder": "Enter your current semester",
         "errorMsg": "",
         "regex": "",
-        "labels": [],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
