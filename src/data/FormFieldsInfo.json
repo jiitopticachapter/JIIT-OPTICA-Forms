@@ -62,7 +62,11 @@
         "name": "entry.college",
         "required": true,
         "type": "radio",
-        "labels": ["JIIT-62", "JIIT-128", "Others"],
+        "labels": [
+          "JIIT-62",
+          "JIIT-128",
+          "Others"
+        ],
         "otherKey": ".other_option_response",
         "errorMsg": "Please select your college."
       },
@@ -460,7 +464,12 @@
         "placeholder": "Enter your current semester",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -633,7 +642,12 @@
         "placeholder": "Enter your Current Semester ",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -703,7 +717,12 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -773,7 +792,285 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      }
+    ],
+    "deadline": {
+      "time": "2025-05-04T12:00"
+    }
+  },
+  "uxdxwe2jfs0l58xi": {
+    "sheetNo": 7,
+    "instructionInfo": {
+      "heading": "Instructions",
+      "description": "Read the below instructions carefully:",
+      "instructions": [
+        "Teams of 3 are compulsory.",
+        "Level 1: Solve 20 Bollywood-style ECE riddles; faster answers get higher points.",
+        "Level 2: Solve a breadboard circuit with one member handling hardware; fallback by decoding a Hindi song if needed.",
+        "Level 3: Complete a relay circuit race with 1 minute per teammate and no talking."
+      ]
+    },
+    "headerInfo": {
+      "heading": "AstroVolt - Ece Event"
+    },
+    "footerInfo": {
+      "contactus": {
+        "heading": "For any query please contact:",
+        "person1": {
+          "name": "Shantanu Pandey",
+          "Phno": "90261 52678"
+        },
+        "person2": {
+          "name": "Manya Dubey",
+          "Phno": "72918 44164"
+        }
+      }
+    },
+    "formInfo": [
+      {
+        "heading": "Team Name",
+        "type": "text",
+        "required": true,
+        "name": "entry.Team_Name",
+        "placeholder": "Enter your team name",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Member 1 Name",
+        "type": "text",
+        "required": true,
+        "name": "entry.Member_1_Name",
+        "placeholder": "Enter your name",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Member 1 Email",
+        "type": "email",
+        "required": true,
+        "name": "entry.Member_1_Email",
+        "placeholder": "Enter your email",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Member 1 Enrollment No.",
+        "type": "text",
+        "required": true,
+        "name": "entry.Member_1_Enrollment_No.",
+        "placeholder": "Enter your enrollment number",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Member 1 Branch",
+        "type": "text",
+        "required": true,
+        "name": "entry.Member_1_Branch",
+        "placeholder": "Enter your branch",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Current Year",
+        "type": "radio",
+        "required": true,
+        "name": "entry.Current_Year",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Member 2 Name",
+        "type": "text",
+        "required": true,
+        "name": "entry.Member_2_Name",
+        "placeholder": "Enter your name",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Member 2 Email",
+        "type": "email",
+        "required": true,
+        "name": "entry.Member_2_Email",
+        "placeholder": "Enter your Email",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Member 2 Enrollment No.",
+        "type": "text",
+        "required": true,
+        "name": "entry.Member_2_Enrollment_No.",
+        "placeholder": "Enter your enrollment number",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Member 2 Branch",
+        "type": "text",
+        "required": true,
+        "name": "entry.Member_2_Branch",
+        "placeholder": "Enter your branch",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Current Year",
+        "type": "radio",
+        "required": true,
+        "name": "entry.Current_Year",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Member 3 Name",
+        "type": "text",
+        "required": true,
+        "name": "entry.Member_3_Name",
+        "placeholder": "Enter your name",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Member 3 Email",
+        "type": "text",
+        "required": true,
+        "name": "entry.Member_3_Email",
+        "placeholder": "Enter your Email",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Member 3 Enrollment No.",
+        "type": "text",
+        "required": true,
+        "name": "entry.Member_3_Enrollment_No.",
+        "placeholder": "Enter your enrollment number",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Member 3 Branch",
+        "type": "text",
+        "required": true,
+        "name": "entry.Member_3_Branch",
+        "placeholder": "Enter your branch",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Currrent year",
+        "type": "radio",
+        "required": true,
+        "name": "entry.Currrent_year",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
