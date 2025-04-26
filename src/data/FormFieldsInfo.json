@@ -62,11 +62,7 @@
         "name": "entry.college",
         "required": true,
         "type": "radio",
-        "labels": [
-          "JIIT-62",
-          "JIIT-128",
-          "Others"
-        ],
+        "labels": ["JIIT-62", "JIIT-128", "Others"],
         "otherKey": ".other_option_response",
         "errorMsg": "Please select your college."
       },
@@ -464,12 +460,7 @@
         "placeholder": "Enter your current semester",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -642,12 +633,7 @@
         "placeholder": "Enter your Current Semester ",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -717,12 +703,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -792,12 +773,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -809,7 +785,7 @@
     }
   },
   "ho6msjapuz7y873h": {
-    "sheetNo": 5,
+    "sheetNo": 6,
     "instructionInfo": {
       "heading": "Instructions",
       "description": "Read the below instructions carefully:",
@@ -886,12 +862,7 @@
         "placeholder": "Enter your Current Semester ",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -961,12 +932,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -1036,12 +1002,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -1130,12 +1091,7 @@
         "placeholder": "Enter your Current Semester ",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -1205,12 +1161,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -1280,12 +1231,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
