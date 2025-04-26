@@ -399,5 +399,165 @@
     "deadline": {
       "time": "2025-05-05T10:00"
     }
+  },
+  "ryp9t52n9xrgnzug": {
+    "sheetNo": 5,
+    "instructionInfo": {
+      "heading": "Instructions",
+      "description": "Read the below instructions carefully:",
+      "instructions": [
+        "The mock interviews will be conducted on 3rd May, from 2:00 PM to 3:30 PM.",
+        "You must upload your resume in a Google Drive link (ensure the link is open for all to view).",
+        "If selected, you will receive a confirmation mail in the coming days.",
+        "The interviews will be conducted by college alumni currently working in the tech industry, including professionals from top companies like Microsoft, Swiggy, Zopsmart, Accenture, Myntra, and more."
+      ]
+    },
+    "headerInfo": {
+      "heading": "Mock Interview - CSE EVENT"
+    },
+    "footerInfo": {
+      "contactus": {
+        "heading": "For any query please contact:",
+        "person1": {
+          "name": "Aryan Goyal",
+          "Phno": "9928590499"
+        },
+        "person2": {
+          "name": "Yash Mittal",
+          "Phno": "8570940287"
+        }
+      }
+    },
+    "formInfo": [
+      {
+        "heading": "Name",
+        "type": "text",
+        "required": true,
+        "name": "entry.Name",
+        "placeholder": "Enter your name",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Enrollment_No.",
+        "type": "text",
+        "required": true,
+        "name": "entry.Enrollment_No.",
+        "placeholder": "Enter your Enrollment No",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Current Semester",
+        "type": "text",
+        "required": true,
+        "name": "entry.Current_Semester",
+        "placeholder": "Enter your current semester",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Branch",
+        "type": "text",
+        "required": true,
+        "name": "entry.Branch",
+        "placeholder": "Enter your branch",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Current CGPA",
+        "type": "text",
+        "required": true,
+        "name": "entry.Current_CGPA",
+        "placeholder": "Enter your current cgpa",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Portfolio Link (if any)",
+        "type": "text",
+        "required": false,
+        "name": "entry.Portfolio_Link_(if_any)",
+        "placeholder": "Enter your portfolio link",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Github Link",
+        "type": "text",
+        "required": true,
+        "name": "entry.Github_Link",
+        "placeholder": "Enter your github link",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Linkedin url",
+        "type": "text",
+        "required": true,
+        "name": "entry.Linkedin_url",
+        "placeholder": "Enter your Linkedin url",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Resume Drive Link",
+        "type": "text",
+        "required": true,
+        "name": "entry.Resume_Drive_Link",
+        "placeholder": "Enter your Resume Link",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      }
+    ],
+    "deadline": {
+      "time": "2025-05-04T12:00"
+    }
   }
 }
