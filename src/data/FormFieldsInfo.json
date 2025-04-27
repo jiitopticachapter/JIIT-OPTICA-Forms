@@ -833,7 +833,13 @@
     "instructionInfo": {
       "heading": "Instructions",
       "description": "Read the below instructions carefully:",
-      "instructions": []
+      "instructions": [
+        "Each performance must be based on 90 seconds. Performers must arrange their own instruments if required.",
+        "Before performing, each participant must submit a self-score. If it matches the judges’ average score after the performance, the participant wins.",
+        "A cash prize of ₹7,000 will be awarded immediately (hand-to-hand).",
+        "In case of multiple winners, a tie-breaker will be held. Judges may also decide to split the prize at their discretion.",
+        "Participants must answer all form questions thoughtfully."
+      ]
     },
     "headerInfo": {
       "heading": "OPTICA GOT TALENT"
@@ -842,12 +848,12 @@
       "contactus": {
         "heading": "For any query please contact:",
         "person1": {
-          "name": "",
-          "Phno": ""
+          "name": "Shantanu",
+          "Phno": "9026152678"
         },
         "person2": {
-          "name": "",
-          "Phno": ""
+          "name": "Sai",
+          "Phno": "7439557090"
         }
       }
     },
@@ -857,6 +863,194 @@
         "type": "text",
         "required": true,
         "name": "entry.Name",
+        "placeholder": "Enter your name",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Email",
+        "type": "email",
+        "required": true,
+        "name": "entry.Email",
+        "placeholder": "Enter your email",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Phone",
+        "type": "text",
+        "required": true,
+        "name": "entry.Phone",
+        "placeholder": "Enter your phone no.",
+        "errorMsg": "",
+        "regex": "^[0-9]{10}$",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Branch",
+        "type": "text",
+        "required": true,
+        "name": "entry.Branch",
+        "placeholder": "Enter your branch",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Do you have any sibling ?",
+        "type": "radio",
+        "required": true,
+        "name": "entry.Do_you_have_any_sibling_?",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [
+          "Yes",
+          "No"
+        ],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Describe yourself in three words",
+        "type": "textarea",
+        "required": true,
+        "name": "entry.Describe_yourself_in_three_words",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "What is your relationship status?",
+        "type": "radio",
+        "required": true,
+        "name": "entry.What_is_your_relationship_status?",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [
+          "Yes",
+          "No"
+        ],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "What is one daring thing you have done in your life so far?",
+        "type": "textarea",
+        "required": true,
+        "name": "entry.What_is_one_daring_thing_you_have_done_in_your_life_so_far?",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "What is your biggest achievement in life so far?",
+        "type": "textarea",
+        "required": true,
+        "name": "entry.What_is_your_biggest_achievement_in_life_so_far?",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "What is your life goal?",
+        "type": "textarea",
+        "required": true,
+        "name": "entry.What_is_your_life_goal?",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "If you had to roast yourself in one line, what would you say?",
+        "type": "textarea",
+        "required": true,
+        "name": "entry.If_you_had_to_roast_yourself_in_one_line,_what_would_you_say?",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "If you were a bad habit, what would you be?",
+        "type": "textarea",
+        "required": true,
+        "name": "entry.If_you_were_a_bad_habit,_what_would_you_be?",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Whats the most shameless thing youve done for attention?",
+        "type": "textarea",
+        "required": true,
+        "name": "entry.Whats_the_most_shameless_thing_youve_done_for_attention?",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Describe your talent performance using only dirty talk (keep it college-appropriate 😉).",
+        "type": "textarea",
+        "required": true,
+        "name": "entry.Describe_your_talent_performance_using_only_dirty_talk_(keep_it_college-appropriate_😉).",
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
