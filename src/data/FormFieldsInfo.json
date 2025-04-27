@@ -1207,6 +1207,23 @@
         "dropdownNames": [],
         "dropdownConfig": [],
         "allowedFileTypes": []
+      },
+      {
+        "heading": "Which side you are ?",
+        "type": "radio",
+        "required": true,
+        "name": "entry.Which_side_you_are_?",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [
+          "Sith (dark side)  ",
+          " Jedi (light side)"
+        ],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
       }
     ],
     "deadline": {
