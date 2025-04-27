@@ -1159,7 +1159,7 @@
         "name": "entry.Phone_No",
         "placeholder": "Enter your Phone no",
         "errorMsg": "",
-        "regex": "^[0-9]10$",
+        "regex": "",
         "labels": [],
         "otherKey": "",
         "dropdownNames": [],
