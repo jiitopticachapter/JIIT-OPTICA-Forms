@@ -62,7 +62,11 @@
         "name": "entry.college",
         "required": true,
         "type": "radio",
-        "labels": ["JIIT-62", "JIIT-128", "Others"],
+        "labels": [
+          "JIIT-62",
+          "JIIT-128",
+          "Others"
+        ],
         "otherKey": ".other_option_response",
         "errorMsg": "Please select your college."
       },
@@ -207,7 +211,12 @@
         "placeholder": "Enter your current semester",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -380,7 +389,12 @@
         "placeholder": "Enter your Current Semester ",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -450,7 +464,12 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -520,7 +539,12 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -638,7 +662,12 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -708,7 +737,12 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -778,7 +812,12 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -884,7 +923,10 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["Yes", "No"],
+        "labels": [
+          "Yes",
+          "No"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -912,7 +954,10 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["Yes", "No"],
+        "labels": [
+          "Yes",
+          "No"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -1171,7 +1216,10 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["Sith (dark side)  ", " Jedi (light side)"],
+        "labels": [
+          "Sith (dark side)  ",
+          " Jedi (light side)"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -1180,6 +1228,34 @@
     ],
     "deadline": {
       "time": "2025-05-05T12:00"
+    }
+  },
+  "cj86l062vf29csca": {
+    "sheetNo": 6,
+    "instructionInfo": {
+      "heading": "Instructions",
+      "description": "Read the below instructions carefully:",
+      "instructions": []
+    },
+    "headerInfo": {
+      "heading": "test"
+    },
+    "footerInfo": {
+      "contactus": {
+        "heading": "For any query please contact:",
+        "person1": {
+          "name": "",
+          "Phno": ""
+        },
+        "person2": {
+          "name": "",
+          "Phno": ""
+        }
+      }
+    },
+    "formInfo": [],
+    "deadline": {
+      "time": "2025-06-19T21:33"
     }
   }
 }
