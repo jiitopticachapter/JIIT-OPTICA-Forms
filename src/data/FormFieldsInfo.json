@@ -1552,13 +1552,13 @@
         "allowedFileTypes": []
       },
       {
-        "heading": "Contact Number",
+        "heading": "Contact Number (Whatsapp)",
         "type": "text",
         "required": true,
-        "name": "entry.Contact_Number",
+        "name": "entry.Contact_Number_(Whatsapp)",
         "placeholder": "Write Your Contact Number",
         "errorMsg": "",
-        "regex": "",
+        "regex": "^[0-9]{10}$",
         "labels": [],
         "otherKey": "",
         "dropdownNames": [],
