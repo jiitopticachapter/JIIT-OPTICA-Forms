@@ -1569,5 +1569,137 @@
     "deadline": {
       "time": "2025-06-22T17:00"
     }
+  },
+  "lhpp7d64ntfz3lj0": {
+    "sheetNo": 18,
+    "instructionInfo": {
+      "heading": "Instructions",
+      "description": "Read the below instructions carefully:",
+      "instructions": [
+        "📌 Rules & Guidelines – Physics in the Frame",
+        "Themes will be revealed on 23rd June at 9:00 AM at JIIT OPTICA Instagram handle .",
+        "Submit one main theme photo and one geo-tagged proof photo before 6:00 PM (23rd June) – no late entries.",
+        "❌ No filters, AI, or edits.",
+        "Add a short caption that connects your photo to the theme.",
+        "Judging based on creativity, theme match, caption & realism.",
+        "📸 Good luck & may the best shot win!"
+      ]
+    },
+    "headerInfo": {
+      "heading": "Physics in the Frame"
+    },
+    "footerInfo": {
+      "contactus": {
+        "heading": "For any query please contact:",
+        "person1": {
+          "name": "Bhavishya",
+          "Phno": "9610363350"
+        },
+        "person2": {
+          "name": "Sarthak Mishra",
+          "Phno": "9517643835"
+        }
+      }
+    },
+    "formInfo": [
+      {
+        "heading": "Name",
+        "type": "text",
+        "required": true,
+        "name": "entry.Name",
+        "placeholder": "Write Your Full Name Here",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Enrollment Number",
+        "type": "text",
+        "required": true,
+        "name": "entry.Enrollment_Number",
+        "placeholder": "Write Your Enrollment Number Here",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Year",
+        "type": "dropdown",
+        "required": true,
+        "name": "entry.Year",
+        "placeholder": "Write Your Year",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [
+          "entry.Year"
+        ],
+        "dropdownConfig": [
+          {
+            "key": "Year",
+            "options": [
+              "2nd year",
+              "3rd year",
+              "4th year"
+            ]
+          }
+        ],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Branch",
+        "type": "text",
+        "required": true,
+        "name": "entry.Branch",
+        "placeholder": "Write Your Branch Here",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Email ID",
+        "type": "email",
+        "required": true,
+        "name": "entry.Email_ID",
+        "placeholder": "Write Your Email Id Here",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Contact Number",
+        "type": "text",
+        "required": true,
+        "name": "entry.Contact_Number",
+        "placeholder": "Write Your Contact Number",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      }
+    ],
+    "deadline": {
+      "time": "2025-06-22T17:00"
+    }
   }
 }
