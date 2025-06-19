@@ -1515,11 +1515,9 @@
           {
             "key": "Year",
             "options": [
-              "Select your year from the dropdown",
-              "2nd",
-              "3rd",
-              "4th",
-              ""
+              "2nd year",
+              "3rd year",
+              "4th year"
             ]
           }
         ],
