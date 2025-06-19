@@ -1747,6 +1747,20 @@
         "dropdownNames": [],
         "dropdownConfig": [],
         "allowedFileTypes": []
+      },
+      {
+        "heading": "name",
+        "type": "text",
+        "required": true,
+        "name": "entry.name",
+        "placeholder": "name here",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
       }
     ],
     "deadline": {
