@@ -62,7 +62,11 @@
         "name": "entry.college",
         "required": true,
         "type": "radio",
-        "labels": ["JIIT-62", "JIIT-128", "Others"],
+        "labels": [
+          "JIIT-62",
+          "JIIT-128",
+          "Others"
+        ],
         "otherKey": ".other_option_response",
         "errorMsg": "Please select your college."
       },
@@ -164,7 +168,12 @@
         "placeholder": "Enter your current semester",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -337,7 +346,12 @@
         "placeholder": "Enter your Current Semester ",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -407,7 +421,12 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -477,7 +496,12 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -595,7 +619,12 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -665,7 +694,12 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -735,7 +769,12 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
+        "labels": [
+          "1st year",
+          "2nd year",
+          "3rd year",
+          "4th year"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -896,7 +935,10 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["Sith (dark side)  ", " Jedi (light side)"],
+        "labels": [
+          "Sith (dark side)  ",
+          " Jedi (light side)"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -977,7 +1019,9 @@
         "regex": "",
         "labels": [],
         "otherKey": "",
-        "dropdownNames": ["entry.Year"],
+        "dropdownNames": [
+          "entry.Year"
+        ],
         "dropdownConfig": [
           {
             "key": "Year",
@@ -1155,7 +1199,10 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["Sector-62", "Sector-128"],
+        "labels": [
+          "Sector-62",
+          "Sector-128"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -1169,7 +1216,10 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["Hosteller", "Day Scholar"],
+        "labels": [
+          "Hosteller",
+          "Day Scholar"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -1391,7 +1441,10 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["Sector-62", "Sector-128"],
+        "labels": [
+          "Sector-62",
+          "Sector-128"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -1405,7 +1458,10 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": ["Hosteller", "Day Scholar"],
+        "labels": [
+          "Hosteller",
+          "Day Scholar"
+        ],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -1422,27 +1478,13 @@
         "labels": [],
         "otherKey": "",
         "dropdownNames": [
-          "entry.Preferred_domain_1",
-          "entry.Preferred_domain_2"
+          "entry.Preferred_domain_1"
         ],
         "dropdownConfig": [
           {
             "key": "Preferred domain 1",
             "options": [
               "Choose your domain 1",
-              "Management",
-              "Technical",
-              "Outreach (PR)",
-              "Cinematography",
-              "Marketing",
-              "Creative",
-              "Digital"
-            ]
-          },
-          {
-            "key": "Preferred domain 2",
-            "options": [
-              "Choose your domain 2",
               "Management",
               "Technical",
               "Outreach (PR)",
