@@ -62,11 +62,7 @@
         "name": "entry.college",
         "required": true,
         "type": "radio",
-        "labels": [
-          "JIIT-62",
-          "JIIT-128",
-          "Others"
-        ],
+        "labels": ["JIIT-62", "JIIT-128", "Others"],
         "otherKey": ".other_option_response",
         "errorMsg": "Please select your college."
       },
@@ -102,49 +98,6 @@
     ],
     "deadline": {
       "time": "2026-03-19T01:00"
-    }
-  },
-  "xp30j03ozlrdihs1": {
-    "sheetNo": 3,
-    "instructionInfo": {
-      "heading": "Instructions",
-      "description": "Read the below instructions carefully:",
-      "instructions": []
-    },
-    "headerInfo": {
-      "heading": "testing"
-    },
-    "footerInfo": {
-      "contactus": {
-        "heading": "For any query please contact:",
-        "person1": {
-          "name": "",
-          "Phno": ""
-        },
-        "person2": {
-          "name": "",
-          "Phno": ""
-        }
-      }
-    },
-    "formInfo": [
-      {
-        "heading": "name",
-        "type": "text",
-        "required": false,
-        "name": "entry.name",
-        "placeholder": "write your name",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      }
-    ],
-    "deadline": {
-      "time": "2025-04-17T16:31"
     }
   },
   "ryp9t52n9xrgnzug": {
@@ -211,12 +164,7 @@
         "placeholder": "Enter your current semester",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -312,7 +260,7 @@
     }
   },
   "ho6msjapuz7y873h": {
-    "sheetNo": 6,
+    "sheetNo": 4,
     "instructionInfo": {
       "heading": "Instructions",
       "description": "Read the below instructions carefully:",
@@ -389,12 +337,7 @@
         "placeholder": "Enter your Current Semester ",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -464,12 +407,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -539,12 +477,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -556,7 +489,7 @@
     }
   },
   "uxdxwe2jfs0l58xi": {
-    "sheetNo": 7,
+    "sheetNo": 3,
     "instructionInfo": {
       "heading": "Instructions",
       "description": "Read the below instructions carefully:",
@@ -662,12 +595,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -737,12 +665,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -812,12 +735,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -828,246 +746,8 @@
       "time": "2025-05-04T12:00"
     }
   },
-  "cpqk29jus9m4zlzh": {
-    "sheetNo": 8,
-    "instructionInfo": {
-      "heading": "Instructions",
-      "description": "Read the below instructions carefully:",
-      "instructions": [
-        "Each performance must be based on 90 seconds. Performers must arrange their own instruments if required.",
-        "Before performing, each participant must submit a self-score. If it matches the judges’ average score after the performance, the participant wins.",
-        "A cash prize of ₹7,000 will be awarded immediately (hand-to-hand).",
-        "In case of multiple winners, a tie-breaker will be held. Judges may also decide to split the prize at their discretion.",
-        "Participants must answer all form questions thoughtfully.",
-        "You already know the drill of this event so prepare accordingly. Best of Luck😎😏"
-      ]
-    },
-    "headerInfo": {
-      "heading": "JAYPEE'S GOT TALENT"
-    },
-    "footerInfo": {
-      "contactus": {
-        "heading": "For any query please contact:",
-        "person1": {
-          "name": "Shantanu",
-          "Phno": "9026152678"
-        },
-        "person2": {
-          "name": "Sai",
-          "Phno": "7439557090"
-        }
-      }
-    },
-    "formInfo": [
-      {
-        "heading": "Name",
-        "type": "text",
-        "required": true,
-        "name": "entry.Name",
-        "placeholder": "Enter your name",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "Email",
-        "type": "email",
-        "required": true,
-        "name": "entry.Email",
-        "placeholder": "Enter your email",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "Phone",
-        "type": "text",
-        "required": true,
-        "name": "entry.Phone",
-        "placeholder": "Enter your phone no.",
-        "errorMsg": "",
-        "regex": "^[0-9]{10}$",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "Branch",
-        "type": "text",
-        "required": true,
-        "name": "entry.Branch",
-        "placeholder": "Enter your branch",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "Do you have any sibling ?",
-        "type": "radio",
-        "required": true,
-        "name": "entry.Do_you_have_any_sibling_?",
-        "placeholder": "",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [
-          "Yes",
-          "No"
-        ],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "Describe yourself in three words",
-        "type": "textarea",
-        "required": true,
-        "name": "entry.Describe_yourself_in_three_words",
-        "placeholder": "",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "What is your relationship status?",
-        "type": "radio",
-        "required": true,
-        "name": "entry.What_is_your_relationship_status?",
-        "placeholder": "",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [
-          "Yes",
-          "No"
-        ],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "What is one daring thing you have done in your life so far?",
-        "type": "textarea",
-        "required": true,
-        "name": "entry.What_is_one_daring_thing_you_have_done_in_your_life_so_far?",
-        "placeholder": "",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "What is your biggest achievement in life so far?",
-        "type": "textarea",
-        "required": true,
-        "name": "entry.What_is_your_biggest_achievement_in_life_so_far?",
-        "placeholder": "",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "What is your life goal?",
-        "type": "textarea",
-        "required": true,
-        "name": "entry.What_is_your_life_goal?",
-        "placeholder": "",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "If you had to roast yourself in one line, what would you say?",
-        "type": "textarea",
-        "required": true,
-        "name": "entry.If_you_had_to_roast_yourself_in_one_line,_what_would_you_say?",
-        "placeholder": "",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "If you were a bad habit, what would you be?",
-        "type": "textarea",
-        "required": true,
-        "name": "entry.If_you_were_a_bad_habit,_what_would_you_be?",
-        "placeholder": "",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "Whats the most shameless thing youve done for attention?",
-        "type": "textarea",
-        "required": true,
-        "name": "entry.Whats_the_most_shameless_thing_youve_done_for_attention?",
-        "placeholder": "",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "Describe your talent performance using only dirty talk (keep it college-appropriate 😉).",
-        "type": "textarea",
-        "required": true,
-        "name": "entry.Describe_your_talent_performance_using_only_dirty_talk_(keep_it_college-appropriate_😉).",
-        "placeholder": "",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      }
-    ],
-    "deadline": {
-      "time": "2025-05-05T12:00"
-    }
-  },
   "nqc3wxktsyz7a96x": {
-    "sheetNo": 9,
+    "sheetNo": 2,
     "instructionInfo": {
       "heading": "Instructions",
       "description": "Read the below instructions carefully:",
@@ -1216,10 +896,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "Sith (dark side)  ",
-          " Jedi (light side)"
-        ],
+        "labels": ["Sith (dark side)  ", " Jedi (light side)"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -1230,216 +907,8 @@
       "time": "2025-05-05T12:00"
     }
   },
-  "cj86l062vf29csca": {
-    "sheetNo": 6,
-    "instructionInfo": {
-      "heading": "Instructions",
-      "description": "Read the below instructions carefully:",
-      "instructions": []
-    },
-    "headerInfo": {
-      "heading": "test"
-    },
-    "footerInfo": {
-      "contactus": {
-        "heading": "For any query please contact:",
-        "person1": {
-          "name": "",
-          "Phno": ""
-        },
-        "person2": {
-          "name": "",
-          "Phno": ""
-        }
-      }
-    },
-    "formInfo": [],
-    "deadline": {
-      "time": "2025-06-19T21:33"
-    }
-  },
-  "34vbs9u04tvnchxr": {
-    "sheetNo": 6,
-    "instructionInfo": {
-      "heading": "Instructions",
-      "description": "Read the below instructions carefully:",
-      "instructions": [
-        "hii"
-      ]
-    },
-    "headerInfo": {
-      "heading": "summer"
-    },
-    "footerInfo": {
-      "contactus": {
-        "heading": "For any query please contact:",
-        "person1": {
-          "name": "hello",
-          "Phno": ""
-        },
-        "person2": {
-          "name": "",
-          "Phno": ""
-        }
-      }
-    },
-    "formInfo": [],
-    "deadline": {
-      "time": "2025-06-26T21:38"
-    }
-  },
-  "wzb2knxwu4a9k200": {
-    "sheetNo": 6,
-    "instructionInfo": {
-      "heading": "Instructions",
-      "description": "Read the below instructions carefully:",
-      "instructions": [
-        "hii"
-      ]
-    },
-    "headerInfo": {
-      "heading": "summer"
-    },
-    "footerInfo": {
-      "contactus": {
-        "heading": "For any query please contact:",
-        "person1": {
-          "name": "hello",
-          "Phno": ""
-        },
-        "person2": {
-          "name": "",
-          "Phno": ""
-        }
-      }
-    },
-    "formInfo": [],
-    "deadline": {
-      "time": "2025-06-26T21:38"
-    }
-  },
-  "7u5tbya15zgg61vc": {
-    "sheetNo": 6,
-    "instructionInfo": {
-      "heading": "Instructions",
-      "description": "Read the below instructions carefully:",
-      "instructions": [
-        "hii"
-      ]
-    },
-    "headerInfo": {
-      "heading": "summer"
-    },
-    "footerInfo": {
-      "contactus": {
-        "heading": "For any query please contact:",
-        "person1": {
-          "name": "hello",
-          "Phno": ""
-        },
-        "person2": {
-          "name": "",
-          "Phno": ""
-        }
-      }
-    },
-    "formInfo": [],
-    "deadline": {
-      "time": "2025-06-26T21:38"
-    }
-  },
-  "8lfbm7cemrd46k2i": {
-    "sheetNo": 6,
-    "instructionInfo": {
-      "heading": "Instructions",
-      "description": "Read the below instructions carefully:",
-      "instructions": [
-        "none"
-      ]
-    },
-    "headerInfo": {
-      "heading": "sample form1"
-    },
-    "footerInfo": {
-      "contactus": {
-        "heading": "For any query please contact:",
-        "person1": {
-          "name": "abc",
-          "Phno": "123"
-        },
-        "person2": {
-          "name": "",
-          "Phno": ""
-        }
-      }
-    },
-    "formInfo": [
-      {
-        "heading": "Name",
-        "type": "text",
-        "required": true,
-        "name": "entry.Name",
-        "placeholder": "write ur name",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      }
-    ],
-    "deadline": {
-      "time": "2025-06-19T21:55"
-    }
-  },
-  "1s7yae80s2elqbvy": {
-    "sheetNo": 18,
-    "instructionInfo": {
-      "heading": "Instructions",
-      "description": "Read the below instructions carefully:",
-      "instructions": [
-        "done"
-      ]
-    },
-    "headerInfo": {
-      "heading": "form2"
-    },
-    "footerInfo": {
-      "contactus": {
-        "heading": "For any query please contact:",
-        "person1": {
-          "name": "abc",
-          "Phno": "123"
-        },
-        "person2": {
-          "name": "",
-          "Phno": ""
-        }
-      }
-    },
-    "formInfo": [
-      {
-        "heading": "Name",
-        "type": "text",
-        "required": true,
-        "name": "entry.Name",
-        "placeholder": "write ur name",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      }
-    ],
-    "deadline": {
-      "time": "2025-06-20T22:03"
-    }
-  },
   "ceiobjpw7rq6dd5u": {
-    "sheetNo": 18,
+    "sheetNo": 6,
     "instructionInfo": {
       "heading": "Instructions",
       "description": "Read the below instructions carefully:",
@@ -1508,9 +977,7 @@
         "regex": "",
         "labels": [],
         "otherKey": "",
-        "dropdownNames": [
-          "entry.Year"
-        ],
+        "dropdownNames": ["entry.Year"],
         "dropdownConfig": [
           {
             "key": "Year",
@@ -1569,166 +1036,6 @@
     ],
     "deadline": {
       "time": "2025-06-22T17:00"
-    }
-  },
-  "lhpp7d64ntfz3lj0": {
-    "sheetNo": 18,
-    "instructionInfo": {
-      "heading": "Instructions",
-      "description": "Read the below instructions carefully:",
-      "instructions": [
-        "📌 Rules & Guidelines – Physics in the Frame",
-        "Themes will be revealed on 23rd June at 9:00 AM at JIIT OPTICA Instagram handle .",
-        "Submit one main theme photo and one geo-tagged proof photo before 6:00 PM (23rd June) – no late entries.",
-        "❌ No filters, AI, or edits.",
-        "Add a short caption that connects your photo to the theme.",
-        "Judging based on creativity, theme match, caption & realism.",
-        "📸 Good luck & may the best shot win!"
-      ]
-    },
-    "headerInfo": {
-      "heading": "Physics in the Frame"
-    },
-    "footerInfo": {
-      "contactus": {
-        "heading": "For any query please contact:",
-        "person1": {
-          "name": "Bhavishya",
-          "Phno": "9610363350"
-        },
-        "person2": {
-          "name": "Sarthak Mishra",
-          "Phno": "9517643835"
-        }
-      }
-    },
-    "formInfo": [
-      {
-        "heading": "Name",
-        "type": "text",
-        "required": true,
-        "name": "entry.Name",
-        "placeholder": "Write Your Full Name Here",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "Enrollment Number",
-        "type": "text",
-        "required": true,
-        "name": "entry.Enrollment_Number",
-        "placeholder": "Write Your Enrollment Number Here",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "Year",
-        "type": "dropdown",
-        "required": true,
-        "name": "entry.Year",
-        "placeholder": "Write Your Year",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [
-          "entry.Year"
-        ],
-        "dropdownConfig": [
-          {
-            "key": "Year",
-            "options": [
-              "2nd year",
-              "3rd year",
-              "4th year"
-            ]
-          }
-        ],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "Branch",
-        "type": "text",
-        "required": true,
-        "name": "entry.Branch",
-        "placeholder": "Write Your Branch Here",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "Email ID",
-        "type": "email",
-        "required": true,
-        "name": "entry.Email_ID",
-        "placeholder": "Write Your Email Id Here",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      },
-      {
-        "heading": "Contact Number",
-        "type": "text",
-        "required": true,
-        "name": "entry.Contact_Number",
-        "placeholder": "Write Your Contact Number",
-        "errorMsg": "",
-        "regex": "",
-        "labels": [],
-        "otherKey": "",
-        "dropdownNames": [],
-        "dropdownConfig": [],
-        "allowedFileTypes": []
-      }
-    ],
-    "deadline": {
-      "time": "2025-06-22T17:00"
-    }
-  },
-  "yjnby97aihn5qzj2": {
-    "sheetNo": 23,
-    "instructionInfo": {
-      "heading": "Instructions",
-      "description": "Read the below instructions carefully:",
-      "instructions": []
-    },
-    "headerInfo": {
-      "heading": "testing"
-    },
-    "footerInfo": {
-      "contactus": {
-        "heading": "For any query please contact:",
-        "person1": {
-          "name": "",
-          "Phno": ""
-        },
-        "person2": {
-          "name": "",
-          "Phno": ""
-        }
-      }
-    },
-    "formInfo": [],
-    "deadline": {
-      "time": "2025-06-28T17:33"
     }
   }
 }
