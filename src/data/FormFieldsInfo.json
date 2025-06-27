@@ -1323,5 +1323,247 @@
     "deadline": {
       "time": "2025-07-01T22:00"
     }
+  },
+  "rq14vsdnk09lim3e": {
+    "sheetNo": 7,
+    "instructionInfo": {
+      "heading": "Instructions",
+      "description": "Read the below instructions carefully:",
+      "instructions": [
+        "Open to : 2nd-year students only",
+        "Use a valid college email and active phone number",
+        "Submit only once"
+      ]
+    },
+    "headerInfo": {
+      "heading": "JIIT OPTICA STUDENT CHAPTER- VOLUNTEER FORM 2025"
+    },
+    "footerInfo": {
+      "contactus": {
+        "heading": "For any query please contact:",
+        "person1": {
+          "name": "Bhavishya Katariya",
+          "Phno": "9610363350"
+        },
+        "person2": {
+          "name": "Sarthak Mishra",
+          "Phno": "9517643835"
+        }
+      }
+    },
+    "formInfo": [
+      {
+        "heading": "Name",
+        "type": "text",
+        "required": true,
+        "name": "entry.Name",
+        "placeholder": "Write your name",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Enrollment Number",
+        "type": "text",
+        "required": true,
+        "name": "entry.Enrollment_Number",
+        "placeholder": "Write your enroll. no.",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Phone Number",
+        "type": "text",
+        "required": true,
+        "name": "entry.Phone_Number",
+        "placeholder": "Provide your phone no.",
+        "errorMsg": "",
+        "regex": "^[0-9]{10}$",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Email address",
+        "type": "email",
+        "required": true,
+        "name": "entry.Email_address",
+        "placeholder": "Please provide college email id.",
+        "errorMsg": "",
+        "regex": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Branch",
+        "type": "radio",
+        "required": true,
+        "name": "entry.Branch",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [
+          "CSE",
+          "IT",
+          "ECE",
+          "EE-VLSI",
+          "EE-ACT",
+          "Biotech",
+          "ECM",
+          "M&C",
+          "BCA"
+        ],
+        "otherKey": ".other_option_response",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Campus",
+        "type": "radio",
+        "required": true,
+        "name": "entry.Campus",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [
+          "Sector-62",
+          "Sector-128"
+        ],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Residential Status",
+        "type": "radio",
+        "required": true,
+        "name": "entry.Residential_Status",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [
+          "Hosteller",
+          "Day Scholar"
+        ],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "",
+        "type": "dropdown",
+        "required": true,
+        "name": "",
+        "placeholder": "",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [
+          "entry.Preferred_domain_1",
+          "entry.Preferred_Domain_2"
+        ],
+        "dropdownConfig": [
+          {
+            "key": "Preferred domain 1",
+            "options": [
+              "Management",
+              "Technical",
+              "Outreach (PR)",
+              "Cinematography",
+              "Marketing",
+              "Creative",
+              "Digital"
+            ]
+          },
+          {
+            "key": "Preferred Domain 2",
+            "options": [
+              "Management",
+              "Technical",
+              "Outreach (PR)",
+              "Cinematography",
+              "Marketing",
+              "Creative",
+              "Digital"
+            ]
+          }
+        ],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Have you any prior experience in the domain youve opted?,type:textarea,required:true,name:entry.Have_you_any_prior_experience_in_the_domain_youve_opted?",
+        "placeholder": "Write here...",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Any work you need to show us regarding your opted domain (Any poster, video, project etc.)",
+        "type": "text",
+        "required": false,
+        "name": "entry.Any_work_you_need_to_show_us_regarding_your_opted_domain_(Any_poster,_video,_project_etc.)",
+        "placeholder": "Please provide your Drive link or any other relevant resource.",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Why do you want to be a part of OPTICA?",
+        "type": "textarea",
+        "required": true,
+        "name": "entry.Why_do_you_want_to_be_a_part_of_OPTICA?",
+        "placeholder": "Write here...",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      },
+      {
+        "heading": "Are you volunteer in any other hub? (if yes, provide the name)",
+        "type": "textarea",
+        "required": true,
+        "name": "entry.Are_you_volunteer_in_any_other_hub?_(if_yes,_provide_the_name)",
+        "placeholder": "Write here...",
+        "errorMsg": "",
+        "regex": "",
+        "labels": [],
+        "otherKey": "",
+        "dropdownNames": [],
+        "dropdownConfig": [],
+        "allowedFileTypes": []
+      }
+    ],
+    "deadline": {
+      "time": "2025-07-01T22:00"
+    }
   }
 }
