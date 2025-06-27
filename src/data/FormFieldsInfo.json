@@ -1478,12 +1478,13 @@
         "otherKey": "",
         "dropdownNames": [
           "entry.Preferred_domain_1",
-          "entry.Preferred_Domain_2"
+          "entry.Preferred_domain_2"
         ],
         "dropdownConfig": [
           {
             "key": "Preferred domain 1",
             "options": [
+              "Choose your domain 1",
               "Management",
               "Technical",
               "Outreach (PR)",
@@ -1494,8 +1495,9 @@
             ]
           },
           {
-            "key": "Preferred Domain 2",
+            "key": "Preferred domain 2",
             "options": [
+              "Choose your domain 2",
               "Management",
               "Technical",
               "Outreach (PR)",
