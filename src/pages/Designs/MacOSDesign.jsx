@@ -59,6 +59,45 @@ const MacOSDesign = ({ FormFieldsInfo }) => {
         >
           <Sidebar>
             <SidebarLogo src={optica_logo} alt="College Logo" />
+            <div style={{ textAlign: "justify", padding: "15px" }}>
+              <p>
+                Are you someone who <strong>dreams big</strong>,{" "}
+                <strong>thinks different</strong>, and wants to
+                <strong> make an impact</strong>? Then <strong>Optica</strong>{" "}
+                is the place for you!
+              </p>
+
+              <p>
+                We’re an independent, student-powered society blending{" "}
+                <strong>creativity, physics, and tech</strong> — from hosting{" "}
+                <em>Jaypee’s Got Talent</em>, to unforgettable guest talks like{" "}
+                <strong>H.C. Verma sir</strong>, to pulling off{" "}
+                <strong>JSCOP 7.0</strong> with massive success — we’ve built a
+                legacy.
+              </p>
+
+              <p
+                style={{
+                  fontSize: "1.1rem",
+                  fontWeight: "600",
+                  marginTop: "1rem",
+                  textAlign: "center",
+                }}
+              >
+                🚀 And now, we're recruiting!! 🚀
+              </p>
+
+              <p>Join Optica family and you’ll get the chance to:</p>
+
+              <ul style={{ paddingLeft: "1.2rem", lineHeight: "1.8" }}>
+                <li>Organize flagship science & innovation events</li>
+                <li>Build a strong network in physics, optics, and beyond</li>
+                <li>
+                  Be part of a creative, collaborative, and enthusiastic team
+                </li>
+                <li>Turn your boldest ideas into real impact</li>
+              </ul>
+            </div>
             <h3
               style={{
                 backgroundColor: "#2c2c2c",
@@ -69,6 +108,7 @@ const MacOSDesign = ({ FormFieldsInfo }) => {
             >
               {FormFieldsInfo?.instructionInfo?.heading}
             </h3>
+
             <Instructions>
               <TerminalCommand>
                 {/* <EventDetails>
@@ -89,7 +129,7 @@ const MacOSDesign = ({ FormFieldsInfo }) => {
                   </a>
                   <br />
                 </EventDetails> */}
-                <br />
+                {/* <br /> */}
                 {FormFieldsInfo?.instructionInfo?.description} <br />
                 <br />
                 {FormFieldsInfo?.instructionInfo?.instructions.map(
@@ -105,11 +145,11 @@ const MacOSDesign = ({ FormFieldsInfo }) => {
                     </div>
                   )
                 )}
-                {/* <EventDetails>
-                  Join our Whatsapp Group:
-                  <br />
+                <EventDetails>
+                  Join our Whatsapp Group for further updates:
+                  {/* <br /> */}
                   <a
-                    href="https://example.com"
+                    href="https://chat.whatsapp.com/HCLBNElKfVU117LwiJv1M5"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: "yellow" }}
@@ -117,7 +157,9 @@ const MacOSDesign = ({ FormFieldsInfo }) => {
                     Click here
                   </a>
                   <br />
-                </EventDetails> */}
+                </EventDetails>
+                {/* <br /> */}
+                {/* <br /> */}
               </TerminalCommand>
             </Instructions>
             <Tagdiv

@@ -232,56 +232,120 @@ const FormDataComponent = (validateField, formStyle) => {
           );
         } else if (field.type === "dropdown") {
           return (
-            <Form.Group key={index}>
-              <Form.Label
+            <>
+              <div
                 style={{
-                  color: formStyle.labels.color || "#e0e0e0",
-                  display: formStyle.labels.display || "",
+                  backgroundColor: "#222",
+                  padding: "10px",
+                  borderRadius: "15px",
                 }}
               >
-                {field.heading} {field.required ? <span>*</span> : ""}
-              </Form.Label>
-
-              {field.dropdownConfig.map((dropdown, idx) => (
-                <ThemedSelectWrapper
-                  bgColor={formStyle.inputWrapper.bgColor}
-                  borderOnFocus={formStyle.inputWrapper.borderOnFocus}
-                  borderRadius={formStyle.inputWrapper.borderRadius}
-                  border={formStyle.inputWrapper.border}
-                  key={idx}
+                <h3
+                  style={{
+                    fontSize: "1.4rem",
+                    fontWeight: "600",
+                    marginBottom: "1rem",
+                    marginLeft: "-10px",
+                    textAlign: "center",
+                  }}
                 >
-                  <IconWrapper2
-                    bgColor={formStyle.icon.bgColor}
-                    color={formStyle.icon.Color}
+                  Optica Domains & Responsibilities
+                </h3>
+                <ul style={{ paddingLeft: "1.2rem", lineHeight: "1.8" }}>
+                  <li>
+                    <strong>Management:</strong> Be the brain behind the scenes!
+                    Plan, lead, and execute all events and operations smoothly.
+                  </li>
+                  <br />
+                  <li>
+                    <strong>PR (Public Relations):</strong> The voice of Optica!
+                    Build strategic partnerships, boost presence, and network
+                    like a pro.
+                  </li>
+                  <br />
+                  <li>
+                    <strong>Digital:</strong> Love Instagram? Reels? Trends? Own
+                    our social media game and make Optica go viral.
+                  </li>
+                  <br />
+                  <li>
+                    <strong>Cinematography:</strong> Capture the magic! From
+                    reels to aftermovies, tell stories through your lens.
+                  </li>
+                  <br />
+                  <li>
+                    <strong>Marketing (Content Writing):</strong> Craft words
+                    that stick. Write crisp, clever content that captures hearts
+                    and minds.
+                  </li>
+                  <br />
+                  <li>
+                    <strong>Tech (CSE preferred):</strong> Build, automate, and
+                    innovate. From web development to automations — you're our
+                    tech wizard.
+                  </li>
+                  <br />
+                  <li>
+                    <strong>Creative:</strong> Design with a difference.
+                    Posters, themes, aesthetics — your art brings our identity
+                    to life.
+                  </li>
+                </ul>
+              </div>
+              <br />
+              <Form.Group key={index}>
+                <Form.Label
+                  style={{
+                    color: formStyle.labels.color || "#e0e0e0",
+                    display: formStyle.labels.display || "",
+                  }}
+                >
+                  {field.heading} {field.required ? <span>*</span> : ""}
+                </Form.Label>
+
+                {field.dropdownConfig.map((dropdown, idx) => (
+                  <ThemedSelectWrapper
+                    bgColor={formStyle.inputWrapper.bgColor}
+                    borderOnFocus={formStyle.inputWrapper.borderOnFocus}
+                    borderRadius={formStyle.inputWrapper.borderRadius}
+                    border={formStyle.inputWrapper.border}
+                    key={idx}
                   >
-                    <MdList style={{ color: formStyle.icon.color || "#666" }} />
-                  </IconWrapper2>
-                  <ThemedSelect
-                    name={field.dropdownNames[idx]}
-                    required={field.required}
-                    // defaultValue={dropdown.options[0]}
-                    value={
-                      selectedValues[field.dropdownNames[idx]] ||
-                      dropdown.options[0]
-                    }
-                    onChange={(e) =>
-                      handleSelectChange(e, field.dropdownNames[idx])
-                    }
-                  >
-                    {dropdown.options.map((option, optIndex) => (
-                      <option
-                        key={optIndex}
-                        value={option}
-                        disabled={optIndex === 0}
-                      >
-                        {option}
-                      </option>
-                    ))}
-                  </ThemedSelect>
-                </ThemedSelectWrapper>
-              ))}
-              {Errors?.[field.name] && <Error>{Errors?.[field.name]}</Error>}
-            </Form.Group>
+                    <IconWrapper2
+                      bgColor={formStyle.icon.bgColor}
+                      color={formStyle.icon.Color}
+                    >
+                      <MdList
+                        style={{ color: formStyle.icon.color || "#666" }}
+                      />
+                    </IconWrapper2>
+                    <ThemedSelect
+                      name={field.dropdownNames[idx]}
+                      required={field.required}
+                      // defaultValue={dropdown.options[0]}
+                      value={
+                        selectedValues[field.dropdownNames[idx]] ||
+                        dropdown.options[0]
+                      }
+                      onChange={(e) =>
+                        handleSelectChange(e, field.dropdownNames[idx])
+                      }
+                    >
+                      {dropdown.options.map((option, optIndex) => (
+                        <option
+                          key={optIndex}
+                          value={option}
+                          disabled={optIndex === 0}
+                        >
+                          {option}
+                        </option>
+                      ))}
+                    </ThemedSelect>
+                  </ThemedSelectWrapper>
+                ))}
+                {Errors?.[field.name] && <Error>{Errors?.[field.name]}</Error>}
+              </Form.Group>
+            </>
           );
         } else if (field.type === "file") {
           return (
