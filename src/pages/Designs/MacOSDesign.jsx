@@ -80,6 +80,13 @@ const MacOSDesign = ({ FormFieldsInfo }) => {
                   <HighlightText>Time: </HighlightText> 9:30 AM to 12:00 PM{" "}
                   <br />
                   <HighlightText>Venue: </HighlightText> Auditorium (JIIT){" "}
+                  <a
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Click here
+                  </a>
                   <br />
                 </EventDetails> */}
                 <br />
@@ -98,6 +105,19 @@ const MacOSDesign = ({ FormFieldsInfo }) => {
                     </div>
                   )
                 )}
+                {/* <EventDetails>
+                  Join our Whatsapp Group:
+                  <br />
+                  <a
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "yellow" }}
+                  >
+                    Click here
+                  </a>
+                  <br />
+                </EventDetails> */}
               </TerminalCommand>
             </Instructions>
             <Tagdiv

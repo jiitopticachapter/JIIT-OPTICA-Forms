@@ -62,11 +62,7 @@
         "name": "entry.college",
         "required": true,
         "type": "radio",
-        "labels": [
-          "JIIT-62",
-          "JIIT-128",
-          "Others"
-        ],
+        "labels": ["JIIT-62", "JIIT-128", "Others"],
         "otherKey": ".other_option_response",
         "errorMsg": "Please select your college."
       },
@@ -168,12 +164,7 @@
         "placeholder": "Enter your current semester",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -346,12 +337,7 @@
         "placeholder": "Enter your Current Semester ",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -421,12 +407,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -496,12 +477,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -619,12 +595,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -694,12 +665,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -769,12 +735,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "1st year",
-          "2nd year",
-          "3rd year",
-          "4th year"
-        ],
+        "labels": ["1st year", "2nd year", "3rd year", "4th year"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -935,10 +896,7 @@
         "placeholder": "",
         "errorMsg": "",
         "regex": "",
-        "labels": [
-          "Sith (dark side)  ",
-          " Jedi (light side)"
-        ],
+        "labels": ["Sith (dark side)  ", " Jedi (light side)"],
         "otherKey": "",
         "dropdownNames": [],
         "dropdownConfig": [],
@@ -1019,9 +977,7 @@
         "regex": "",
         "labels": [],
         "otherKey": "",
-        "dropdownNames": [
-          "entry.Year"
-        ],
+        "dropdownNames": ["entry.Year"],
         "dropdownConfig": [
           {
             "key": "Year",
@@ -1080,62 +1036,6 @@
     ],
     "deadline": {
       "time": "2025-06-22T17:00"
-    }
-  },
-  "a5m3o46szvqo00gq": {
-    "sheetNo": 3,
-    "instructionInfo": {
-      "heading": "Instructions",
-      "description": "Read the below instructions carefully:",
-      "instructions": []
-    },
-    "headerInfo": {
-      "heading": "testt"
-    },
-    "footerInfo": {
-      "contactus": {
-        "heading": "For any query please contact:",
-        "person1": {
-          "name": "",
-          "Phno": ""
-        },
-        "person2": {
-          "name": "",
-          "Phno": ""
-        }
-      }
-    },
-    "formInfo": [],
-    "deadline": {
-      "time": ""
-    }
-  },
-  "4y9w2kqpe9149ut4": {
-    "sheetNo": 8,
-    "instructionInfo": {
-      "heading": "Instructions",
-      "description": "Read the below instructions carefully:",
-      "instructions": []
-    },
-    "headerInfo": {
-      "heading": "testt1"
-    },
-    "footerInfo": {
-      "contactus": {
-        "heading": "For any query please contact:",
-        "person1": {
-          "name": "",
-          "Phno": ""
-        },
-        "person2": {
-          "name": "",
-          "Phno": ""
-        }
-      }
-    },
-    "formInfo": [],
-    "deadline": {
-      "time": ""
     }
   }
 }
