@@ -1194,6 +1194,7 @@
           {
             "key": "Preferred domain 1",
             "options": [
+              "Select your domain",
               "Management",
               "Technical",
               "Outreach (PR)",
@@ -1206,6 +1207,7 @@
           {
             "key": "Preferred Domain 2",
             "options": [
+              "Select your domain",
               "Management",
               "Technical",
               "Outreach (PR)",

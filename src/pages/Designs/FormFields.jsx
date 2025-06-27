@@ -280,7 +280,7 @@ const FormDataComponent = (validateField, formStyle) => {
                   </li>
                   <br />
                   <li>
-                    <strong>Tech (CSE preferred):</strong> Build, automate, and
+                    <strong>Technical:</strong> Build, automate, and
                     innovate. From web development to automations — you're our
                     tech wizard.
                   </li>
