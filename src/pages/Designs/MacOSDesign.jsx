@@ -90,12 +90,13 @@ const MacOSDesign = ({ FormFieldsInfo }) => {
               <p>Join Optica family and you’ll get the chance to:</p>
 
               <ul style={{ paddingLeft: "1.2rem", lineHeight: "1.8" }}>
-                <li>Organize flagship science & innovation events</li>
-                <li>Build a strong network in physics, optics, and beyond</li>
+                <li>Organize flagship events in science, tech, and innovation</li>
+                <li>Host impactful CSE workshops, tech events, and hackathons</li>
                 <li>
-                  Be part of a creative, collaborative, and enthusiastic team
+                 Build a strong network in physics, optics, and cutting-edge technology
                 </li>
-                <li>Turn your boldest ideas into real impact</li>
+                <li>Be part of a creative, collaborative, and enthusiastic community</li>
+                <li>Turn your boldest ideas — from research to real-world tech — into lasting impact</li>
               </ul>
             </div>
             <h3
