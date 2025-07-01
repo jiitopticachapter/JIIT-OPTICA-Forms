@@ -1047,7 +1047,7 @@
         "Open to : 2nd-year students only",
         "Use a valid college email and active phone number",
         "Submit only once",
-        "Deadline: 1st July, 10:00 p.m."
+        "Deadline: 2nd July, 10:00 p.m."
       ]
     },
     "headerInfo": {
@@ -1194,7 +1194,7 @@
           {
             "key": "Preferred domain 1",
             "options": [
-              "Select your domain",
+              "Select your domain 1",
               "Management",
               "Technical",
               "Outreach (PR)",
@@ -1207,7 +1207,7 @@
           {
             "key": "Preferred Domain 2",
             "options": [
-              "Select your domain",
+              "Select your domain 2",
               "Management",
               "Technical",
               "Outreach (PR)",
@@ -1275,7 +1275,7 @@
       }
     ],
     "deadline": {
-      "time": "2025-07-01T22:00"
+      "time": "2025-07-02T22:00"
     }
   }
 }
